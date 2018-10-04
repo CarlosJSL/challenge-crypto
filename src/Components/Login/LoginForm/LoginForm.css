@@ -1,0 +1,12 @@
+form{   
+    border-radius: 10px;
+    height: 250px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 27px;
+    background-color: white;
+    opacity: 0.9;
+    position: absolute;
+    margin: 0 auto;
+    top: 30vh;
+}
