@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './LoginForm.css'
+import {getAllDataOnDB} from '../../../connectDatabase';
+import LoginRegister from '../LoginRegister/LoginRegister'
 
 export default class LoginForm extends Component {
     constructor(props) {
@@ -8,34 +10,52 @@ export default class LoginForm extends Component {
         this.state = {
           email: "",
           password: "",
-          showRegisterForm:  false
+          showRegisterForm:  false,
+          errors: []
         };
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
     }
-    
-    validateForm() {
-        return this.state.email.length > 0 && this.state.password.length > 0;
-    }
 
     handleChange (event) {
-        this.setState({[event.target.id]: event.target.value});
+        this.setState({...this.state,[event.target.id]: event.target.value});
     }
 
-    doLogin()   {
-        const { email , password } = this.state;
-        if(email === "carlos@gmail.com" && password === "123"){
-            window.localStorage.setItem('user',JSON.stringify({username:'Carlos Jose'}));
-            this.props.router.history.push('/dashboard')
-        } 
+    validateForm() {
+        const errors = [];
+        if (this.state.email.length < 5) {
+          errors.push("Email should be at least 5 charcters long");
+        }
+        if (this.state.email.split('').filter(x => x === '@').length !== 1) {
+          errors.push("Email should contain a @");
+        }
+        if (this.state.email.indexOf('.') === -1) {
+          errors.push("Email should contain at least one dot");
+        }
+      
+        return errors;
+    }
+    async doLogin()   {
+        try {
+
+            if(!this.validateForm().length){
+                const { email , password } = this.state;
+                const users = await getAllDataOnDB("user");  
+                const user = users.filter(user => user.email === email && user.password === password);
+                (user.length) ? this.props.router.history.push('/dashboard') : this.setState({...this.state, errors: ['User is not registered']});
+
+            } else {
+                this.setState({...this.state, errors: this.validateForm()});
+            }
+
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     handleSubmit(event){
         event.preventDefault();
-
-        if(this.validateForm()){
-            this.doLogin();
-        }
+        this.doLogin();
     }
 
     render() {
@@ -52,34 +72,24 @@ export default class LoginForm extends Component {
                                 <label>Password</label>
                                 <input type="text" id="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} ></input>
                             </div>
-                             <p id="register">Are you not registered yet? 
-                                <a onClick={()=> this.setState({showRegisterForm: true})}> Sign up here</a>
-                            </p>
-                            <button className="ui positive button" type="submit">Submit</button>
+                                {
+                                    this.state.errors.map((error,index) => {
+                                        return(
+                                            <p style={{color:"red"}} key={index}>{error}</p>
+                                        )
+                                    })
+                                }
+                                <p id="register">Are you not registered yet? 
+                                    <a onClick={()=> this.setState({showRegisterForm: true})}> Sign up here</a>
+                                </p>
+                            <button className="ui positive button" type="submit">Sign in</button>
                         </form>
                     </div>
                 </div>
             )
         } else  {
             return (
-                <div className="ui two column centered grid">
-                    <div className="four wide column">
-                        <form className="ui form" onSubmit={this.handleSubmit}>
-                            <div className="field">
-                                <label>Emaisl</label>
-                                <input type="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleChange}></input>
-                            </div>
-                            <div className="field">
-                                <label>Password</label>
-                                <input type="text" id="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} ></input>
-                            </div>
-                             <p id="register">Are you registered ? 
-                                <a onClick={()=> this.setState({showRegisterForm: false})}> Sign in here</a>
-                            </p>
-                            <button className="ui positive button" type="submit">Submit</button>
-                        </form>
-                    </div>
-                </div>
+                <LoginRegister router = {this.props.router} />
             )
         }
     }
