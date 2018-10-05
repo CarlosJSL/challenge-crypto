@@ -1,11 +1,13 @@
 import React from 'react'
 import './Login.css'
-import LoginHeader from './LoginHeader/LoginHeader'
+import stoneSvg from '../../images/stone.svg'
 import LoginForm from './LoginForm/LoginForm'
 
 export default (props) => (
     <div className="login-main">
-        <LoginHeader />
+        <div className="ui  one column centered grid">
+                <img className="logo" src={stoneSvg}></img>
+        </div>
         <LoginForm router = {props} />
     </div>
 )
