@@ -4,9 +4,11 @@ import './LoginForm.css'
 export default class LoginForm extends Component {
     constructor(props) {
         super(props);
+        
         this.state = {
           email: "",
-          password: ""
+          password: "",
+          showRegisterForm:  false
         };
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -37,23 +39,49 @@ export default class LoginForm extends Component {
     }
 
     render() {
-        return (
-            <div className="ui two column centered grid">
-                <div className="four wide column">
-                    <form className="ui form" onSubmit={this.handleSubmit}>
-                        <div className="field">
-                            <label>Email</label>
-                            <input type="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleChange}></input>
-                        </div>
-                        <div className="field">
-                            <label>Password</label>
-                            <input type="text" id="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} ></input>
-                        </div>
-                        <button className="ui button" type="submit">Submit</button>
-                    </form>
+        if(!this.state.showRegisterForm){
+            return (
+                <div className="ui two column centered grid">
+                    <div className="four wide column">
+                        <form className="ui form" onSubmit={this.handleSubmit}>
+                            <div className="field">
+                                <label>Email</label>
+                                <input type="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleChange}></input>
+                            </div>
+                            <div className="field">
+                                <label>Password</label>
+                                <input type="text" id="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} ></input>
+                            </div>
+                             <p id="register">Are you not registered yet? 
+                                <a onClick={()=> this.setState({showRegisterForm: true})}> Sign up here</a>
+                            </p>
+                            <button className="ui positive button" type="submit">Submit</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        } else  {
+            return (
+                <div className="ui two column centered grid">
+                    <div className="four wide column">
+                        <form className="ui form" onSubmit={this.handleSubmit}>
+                            <div className="field">
+                                <label>Emaisl</label>
+                                <input type="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleChange}></input>
+                            </div>
+                            <div className="field">
+                                <label>Password</label>
+                                <input type="text" id="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} ></input>
+                            </div>
+                             <p id="register">Are you registered ? 
+                                <a onClick={()=> this.setState({showRegisterForm: false})}> Sign in here</a>
+                            </p>
+                            <button className="ui positive button" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            )
+        }
     }
 }
 
