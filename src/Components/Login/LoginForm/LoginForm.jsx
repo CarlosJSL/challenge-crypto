@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './LoginForm.css'
-import {getAllDataOnDB} from '../../../connectDatabase';
+import { getAllDataOnDB } from '../../../connectDatabase';
 import LoginRegister from '../LoginRegister/LoginRegister'
 
 export default class LoginForm extends Component {
@@ -42,7 +42,13 @@ export default class LoginForm extends Component {
                 const { email , password } = this.state;
                 const users = await getAllDataOnDB("user");  
                 const user = users.filter(user => user.email === email && user.password === password);
-                (user.length) ? this.props.router.history.push('/dashboard') : this.setState({...this.state, errors: ['User is not registered']});
+
+                if (user.length) {
+                    window.localStorage.setItem("user", JSON.stringify(user[0]))
+                    this.props.router.history.push('/dashboard') 
+                 } else { 
+                    this.setState({...this.state, errors: ['User is not registered']});
+                 } 
 
             } else {
                 this.setState({...this.state, errors: this.validateForm()});
