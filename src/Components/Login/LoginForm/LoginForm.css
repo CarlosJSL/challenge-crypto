@@ -1,6 +1,5 @@
 form{   
     border-radius: 10px;
-    height: 260px;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 27px;
@@ -15,7 +14,7 @@ form{
 }
 
 .ui.button{
-    float:right
+    margin-bottom: 10px;
 }
 
 a{
