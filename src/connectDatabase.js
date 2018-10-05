@@ -62,11 +62,11 @@ export async function getAllDataOnDB(storage) {
 export async function chargeDB () {
     try {
         const result = await getAllDataOnDB("user")
-        
+
         if(result.length === 0){
-            await putValueOnDB({name:"Carlos José", cpf:"07469212418", data_nascimento:"24/12/1995"},"user")
-            await putValueOnDB({name:"Maria José", cpf:"07469212418", data_nascimento:"24/12/1995"},"user")
-            await putValueOnDB({name:"Adriano Galvao", cpf:"07469212418", data_nascimento:"24/12/1995"},"user")    
+            await putValueOnDB({name:"Carlos José", email:"carlos@gmail.com", password:"123" ,cpf:"07469212418", data_nascimento:"24/12/1995"},"user")
+            await putValueOnDB({name:"Maria José", email:"maria@gmail.com", password:"123",cpf:"07469212418", data_nascimento:"24/12/1995"},"user")
+            await putValueOnDB({name:"Adriano Galvao", email:"adriano@gmail.com",password:"123",cpf:"07469212418", data_nascimento:"24/12/1995"},"user")    
         }
     } catch(error){
         console.log(error)
