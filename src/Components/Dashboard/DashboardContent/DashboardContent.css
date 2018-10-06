@@ -1,0 +1,14 @@
+.ui.fixed.menu+.ui.grid {
+    padding-top: 5.75rem;
+    padding-bottom: 2.75rem;
+    background-color: #EDEFF8;
+    text-align: center;
+    box-shadow: 0 -2px 20px 0 #576475;
+}
+
+.ui.statistics>.statistic {
+    flex-direction: row-reverse;
+}
+
+.ui.fixed.menu+.ui.grid {
+}

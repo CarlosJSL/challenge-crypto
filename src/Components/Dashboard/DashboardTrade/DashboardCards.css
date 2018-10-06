@@ -1,0 +1,4 @@
+.ui.card [class*="center aligned"], .ui.cards>.card [class*="center aligned"] {
+    border: 0px;
+    box-shadow: 0 0;
+}
