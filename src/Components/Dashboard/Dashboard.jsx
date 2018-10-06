@@ -1,7 +1,13 @@
 import React from 'react'
 import './Dashboard.css'
-import Dashboard from './DashboardHeader/DashboardHeader'
+import DashboardHeader from './DashboardHeader/DashboardHeader'
+import DashboardContent from './DashboardContent/DashboardContent'
+import DashboardTrade from './DashboardTrade/DashboardTrade'
 
 export default () => (    
-    <Dashboard />
+    <div>
+        <DashboardHeader />
+        <DashboardContent />
+        <DashboardTrade />
+    </div>
 )
