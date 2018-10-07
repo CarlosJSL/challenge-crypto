@@ -45,6 +45,30 @@ export async function putValueOnDB(value,storage) {
     }
 }
 
+export async function getUser(conn,storage) {
+    return new Promise((resolve, reject) => {
+        const tx = conn.transaction([storage],'readonly');
+        const store = tx.objectStore(storage);
+        const request = store.getAll();
+        request.onsuccess = () => resolve(request.result.find(user => JSON.parse(window.localStorage.getItem('user')).email === user.email));
+        request.onerror = () => reject(request.error);
+      });
+}
+
+export async function getUserAmount(storage) {
+    let conn;
+    try {
+      conn = await connect('stone-crypto',1);
+      const user = await getUser(conn, storage)
+      return user.wallet;
+    } catch(exception) {
+      console.error(exception);
+    } finally {
+      if(conn)
+        conn.close();
+    }
+}
+
 export async function getAllDataOnDB(storage) {
     let conn;
     try {
