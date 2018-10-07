@@ -16,7 +16,8 @@ export const getBitcoinPrice = async () => {
             buy: result.data.ticker.buy,
             sell: result.data.ticker.sell,
             date: moment(Date(result.data.ticker.date)).format('DD/MM/YYYY'),
-            logo: BitcoinLogo
+            logo: BitcoinLogo,
+            symbol: "฿"
         }
     } catch (error) {
         console.error(error)
@@ -46,7 +47,8 @@ export const getBritaPrice = async (date) => {
             buy: result.data.value.pop().cotacaoCompra, 
             sell: result.data.value.pop().cotacaoVenda,
             date: moment(result.data.value.pop().dataHoraCotacao).format('MM/DD/YYYY'),
-            logo: BritaLogo
+            logo: BritaLogo,
+            symbol: "$"
         }
     } catch (error) {
         console.error(error)
