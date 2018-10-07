@@ -2,3 +2,26 @@
     border: 0px;
     box-shadow: 0 0;
 }
+
+.ui.modal>.actions {
+    text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+    .ui.modal {
+        width: 500px;
+        margin: 0;
+    }
+}
+
+.trade {
+    text-align: center !important;
+}
+
+h4 {
+    margin: calc(2rem - .84285714em) 0 1rem !important;
+}
+
+h5 {
+    color: red
+}
