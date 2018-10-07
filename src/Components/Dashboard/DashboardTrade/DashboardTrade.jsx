@@ -3,12 +3,12 @@ import './DashboardTrade.css'
 
 import DashboardCards from './DashboardCards'
 
-export default () => (
+export default (props) => (
 <div className="ui segment">
     <div className="ui two column very relaxed grid">
         <div className="column">
             <h2> Trades</h2>
-            <DashboardCards />
+            <DashboardCards getUserCryptoAmount = {props.user}/>
         </div>
         <div className="column">
             <h2> Transactions</h2>
