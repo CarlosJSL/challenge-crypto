@@ -45,6 +45,7 @@ export default class LoginForm extends Component {
 
                 if (user.length) {
                     window.localStorage.setItem("user", JSON.stringify(user[0]))
+                    
                     this.props.router.history.push('/dashboard') 
                  } else { 
                     this.setState({...this.state, errors: ['User is not registered']});
@@ -67,8 +68,8 @@ export default class LoginForm extends Component {
     render() {
         if(!this.state.showRegisterForm){
             return (
-                <div className="ui two column centered grid">
-                    <div className="four wide column">
+                <div className="ui four column centered grid">
+                    <div className="column responsive">
                         <form className="ui form" onSubmit={this.handleSubmit}>
                             <div className="field">
                                 <label>Email</label>

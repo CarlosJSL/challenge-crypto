@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {getAllDataOnDB,putValueOnDB} from '../../../connectDatabase';
-import LoginForm from '../LoginForm/LoginForm'
+import LoginForm from '../LoginForm/LoginForm';
+import md5 from 'md5';
 
 export default class LoginRegister extends Component {
     constructor(props) {
@@ -52,15 +53,17 @@ export default class LoginRegister extends Component {
                     this.setState({...this.state, errors: ['User already registered']});
 
                 } else {
-                    newUser.wallet = { hash: 'djcv98234y', money_value: 100000, bitcoin_value:0 , brita_value: 0 };
+                    newUser.wallet = { hash: md5(newUser.email), real_value: 100000, bitcoin_value:0 , brita_value: 0 };
                     await putValueOnDB(newUser,newUser.email,"user")
                     window.localStorage.setItem("user", JSON.stringify(newUser))
+                    
                     this.props.router.history.push('/dashboard')
                 }
             } else {
                 this.setState({...this.state, errors: this.validateForm()});
             }            
         } catch (error) {
+            console.log(this.props)
             console.log(error)
         }
     }
@@ -74,8 +77,8 @@ export default class LoginRegister extends Component {
     render() {
         if(!this.state.showLoginForm){
             return (
-                <div className="ui two column centered grid">
-                    <div className="four wide column">
+                <div className="ui four column centered grid">
+                    <div className="column responsive">
                         <form className="ui form" onSubmit={this.handleSubmit}>
                             <div className="field">
                                 <label>Name</label>
