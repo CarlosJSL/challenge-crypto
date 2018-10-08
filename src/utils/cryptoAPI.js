@@ -12,7 +12,7 @@ export const getBitcoinPrice = async () => {
         const result = await axios(bitcoinURL)
         
         return {
-            name: 'Bitcoin',
+            name: 'bitcoin',
             buy: result.data.ticker.buy,
             sell: result.data.ticker.sell,
             date: moment(Date(result.data.ticker.date)).format('DD/MM/YYYY'),
@@ -43,7 +43,7 @@ export const getBritaPrice = async (date) => {
         }
         
         return { 
-            name: 'Brita',
+            name: 'brita',
             buy: result.data.value.pop().cotacaoCompra, 
             sell: result.data.value.pop().cotacaoVenda,
             date: moment(result.data.value.pop().dataHoraCotacao).format('MM/DD/YYYY'),
