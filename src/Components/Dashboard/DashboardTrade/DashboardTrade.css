@@ -6,3 +6,7 @@ h2 {
     text-align: center
 }
 
+.ui.segment {
+    border: 0px;
+    box-shadow: 0 0px;
+}

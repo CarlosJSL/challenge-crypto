@@ -118,7 +118,7 @@ export default class DashboardCards extends Component {
                             <div className="content">
                                 <div className="header">{crypto.name}</div>
                                 <div className="meta">
-                                    <a>1 { crypto.name } -> {crypto.buy}</a>
+                                    <a>1 { crypto.name } -> R${crypto.buy}</a>
                                 </div>
                                 <div className="description">
                                     <div className="ui center aligned segment">

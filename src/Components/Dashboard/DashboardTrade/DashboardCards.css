@@ -25,3 +25,7 @@ h4 {
 h5 {
     color: red
 }
+
+.ui.card, .ui.cards>.card {
+    width: 350px;
+}
