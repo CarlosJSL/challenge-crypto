@@ -53,7 +53,7 @@ export default class LoginRegister extends Component {
 
                 } else {
                     newUser.wallet = { hash: 'djcv98234y', money_value: 100000, bitcoin_value:0 , brita_value: 0 };
-                    await putValueOnDB(newUser,"user")
+                    await putValueOnDB(newUser,newUser.email,"user")
                     window.localStorage.setItem("user", JSON.stringify(newUser))
                     this.props.router.history.push('/dashboard')
                 }
