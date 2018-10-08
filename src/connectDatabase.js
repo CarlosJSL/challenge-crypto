@@ -12,16 +12,36 @@ export function connect(name, version) {
     });
   }
   
-export  function writeData(conn, value, storage) {
+export  function writeData(conn, value,key , storage) {
     return new Promise((resolve, reject) => {
       const tx = conn.transaction([storage],'readwrite');
-      const store = tx.objectStore(storage);
-      const request = store.put(value);
+      const store = tx.objectStore(storage); 
+      let request;
+      if (storage === 'transactions'){
+        request = store.put(value);
+      } else{
+        request = store.put(value, key);
+      }
+      
       request.onsuccess = () => resolve(request.result);
       request.onerror = () => reject(request.error);
     });
 }
 
+
+export async function getUserTransactions(storage) {
+    let conn;
+    try {
+      conn = await connect('stone-crypto',1);
+      const transactions = await getAllData(conn, storage)
+      return transactions.filter(transaction => transaction.wallet.hash === JSON.parse(window.localStorage.getItem('user')).wallet.hash)
+    } catch(exception) {
+      console.error(exception);
+    } finally {
+      if(conn)
+        conn.close();
+    }
+}
 export function getAllData(conn, storage) {
     return new Promise((resolve, reject) => {
       const tx = conn.transaction([storage],'readonly');
@@ -32,11 +52,11 @@ export function getAllData(conn, storage) {
     });
 }
 
-export async function putValueOnDB(value,storage) {
+export async function putValueOnDB(value,key, storage) {
     let conn;
     try {
       conn = await connect('stone-crypto',1);
-      await writeData(conn, value, storage)
+      await writeData(conn, value, key, storage)
     } catch(exception) {
       console.error(exception);
     } finally {
@@ -49,8 +69,8 @@ export async function getUser(conn,storage) {
     return new Promise((resolve, reject) => {
         const tx = conn.transaction([storage],'readonly');
         const store = tx.objectStore(storage);
-        const request = store.getAll();
-        request.onsuccess = () => resolve(request.result.find(user => JSON.parse(window.localStorage.getItem('user')).email === user.email));
+        const request = store.get(JSON.parse(window.localStorage.getItem('user')).email);
+        request.onsuccess = () => resolve(request.result);
         request.onerror = () => reject(request.error);
       });
 }
@@ -68,6 +88,21 @@ export async function getUserAmount(storage) {
         conn.close();
     }
 }
+
+export async function getUserInfo(storage) {
+    let conn;
+    try {
+      conn = await connect('stone-crypto',1);
+      const user = await getUser(conn, storage)
+      return user;
+    } catch(exception) {
+      console.error(exception);
+    } finally {
+      if(conn)
+        conn.close();
+    }
+}
+
 
 export async function getAllDataOnDB(storage) {
     let conn;
@@ -97,11 +132,11 @@ export async function chargeDB () {
                     data_nascimento:"24/12/1995", 
                     wallet:{ 
                         hash: 'djcv98234y', 
-                        real_value: 100000, 
-                        bitcoin_value:0 , 
+                        real_value: 100000.00, 
+                        bitcoin_value: 0 , 
                         brita_value: 0 
                     }
-                },"user")
+                },"carlos@gmail.com","user")
         }
     } catch(error){
         console.log(error)
