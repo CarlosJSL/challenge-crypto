@@ -37,7 +37,7 @@ export default class DashboardContent extends Component{
                                 </div>
                                 <div className="statistic">
                                     <div className="value"> 
-                                        {this.props.userCryptoAmount.bitcoin_value || this.state.userCryptoAmount.brita_value} 
+                                        {this.props.userCryptoAmount.brita_value || this.state.userCryptoAmount.brita_value} 
                                     </div>
                                     <div className="label"> $ </div>
                                 </div>
