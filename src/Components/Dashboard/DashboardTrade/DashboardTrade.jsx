@@ -1,21 +1,27 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './DashboardTrade.css'
 
 import DashboardCards from './DashboardCards'
+import DashboardTransactions from './DashboardTransactions'
 
-export default (props) => (
-<div className="ui segment">
-    <div className="ui two column very relaxed grid">
-        <div className="column">
-            <h2> Trades</h2>
-            <DashboardCards getUserCryptoAmount = {props.user}/>
-        </div>
-        <div className="column">
-            <h2> Transactions</h2>
-        </div>
-   </div>
-   <div className="ui vertical divider">
-      Wallet
-   </div>
-</div>
-)
+
+export default class DashBoardTrade extends Component {
+    render () {
+        return (
+            <div className="ui segment">
+                <div className="ui two column very relaxed grid">
+                    <div className="column">
+                        <h2> Trades</h2>
+                        <DashboardCards getUserCryptoAmount = {this.props.user}/>
+                    </div>
+                    <div className="column">
+                        <DashboardTransactions transactions = {this.props.transactions}/>
+                    </div>
+                </div>
+                <div className="ui vertical divider">
+                    Wallet
+                </div>
+            </div>
+        )
+    }
+}
