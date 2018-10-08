@@ -12,11 +12,11 @@
 .cls-1 {
     stroke-dasharray: 2000;
     stroke-dashoffset: 2000;
-    animation: dash 30s forwards, ihu 12s forwards;
+    animation: dash 30s forwards, color 12s forwards;
     fill-opacity: 0
 }
 
-@keyframes ihu{
+@keyframes color{
     100%{
         fill-opacity: 1
     }
