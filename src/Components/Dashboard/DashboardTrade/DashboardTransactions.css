@@ -1,0 +1,7 @@
+.ui.collapsing.table {
+    width: 100%;
+}
+
+tr,td {
+    text-align: center;
+}

@@ -10,3 +10,30 @@ h2 {
     border: 0px;
     box-shadow: 0 0px;
 }
+
+.responsive-show{
+    
+}
+@media only screen and (max-width: 766px) {
+    .responsive-trade{
+        width: 100% !important;   
+        text-align: center;
+    }
+    .ui.grid .column+.ui.vertical.divider{
+        display: none;
+    }
+    .responsive-show{
+        display: inline !important;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .ui.statistics {
+        display: inline-grid;
+    }
+
+    .ui.statistic>.value, .ui.statistics .statistic>.value {
+        font-size: 3rem!important;
+    }
+}

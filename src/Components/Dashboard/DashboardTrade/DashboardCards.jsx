@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import './DashboardCards.css'
-import { getBitcoinPrice , getBritaPrice } from '../../../utils/cryptoAPI'
-import { getUserAmount, putValueOnDB, getUserInfo } from '../../../connectDatabase'
-
+import './DashboardCards.css';
+import { getBitcoinPrice , getBritaPrice } from '../../../utils/cryptoAPI';
+import { getUserAmount, putValueOnDB, getUserInfo } from '../../../connectDatabase';
+import moment from 'moment';
 
 export default class DashboardCards extends Component {
 
@@ -76,7 +76,7 @@ export default class DashboardCards extends Component {
                     crypto: "Reais",
                     totalValue: this.state.real_amount
                 },
-                date:Date()
+                date: moment(Date()).format('DD/MM/YYYY')
             }
 
             if (condition === "sell") {
@@ -209,5 +209,4 @@ export default class DashboardCards extends Component {
             </div>
         )
     }
-
 }

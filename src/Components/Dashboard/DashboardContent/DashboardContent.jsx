@@ -19,7 +19,7 @@ export default class DashboardContent extends Component{
         return (
             <div  className="ui grid">
                 <div className="sixteen wide column">
-                    <h1>{this.state.onPush}</h1>
+                    <h1>Patrimônio Total</h1>
                         <br></br>
                         <div className="ui  one column centered grid">
                             <div className="ui statistics">
