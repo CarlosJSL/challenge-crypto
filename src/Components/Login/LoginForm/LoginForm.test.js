@@ -163,7 +163,7 @@ describe('doRegister method', () => {
         expect(JSON.parse(window.localStorage.getItem("user")).name).toEqual(instance.state.name);
         expect(JSON.parse(window.localStorage.getItem("user")).email).toEqual(instance.state.email);
         expect(JSON.parse(window.localStorage.getItem("user")).password).toEqual(instance.state.password);
-        expect(JSON.parse(window.localStorage.getItem("user")).wallet.real_value).toEqual(100000);
+        expect(JSON.parse(window.localStorage.getItem("user")).wallet.real_value).toEqual('100000.00');
         
     })
 })

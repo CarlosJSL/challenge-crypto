@@ -48,7 +48,7 @@ describe('componentDidMount method', () => {
 
 describe('DashboardContent Component', () => {
     test('should render', () => {
-      const wrapper = mount(<DashboardContent userCryptoAmount = {{real_value:10000,bitcoin_value:0,brita_value:0}}/> );
+      const wrapper = mount(<DashboardContent userCryptoAmount = {{real_value:"100000.00",bitcoin_value:"0.00000000",brita_value:"0.00"}}/> );
       expect(wrapper).toMatchSnapshot();
     })
 })

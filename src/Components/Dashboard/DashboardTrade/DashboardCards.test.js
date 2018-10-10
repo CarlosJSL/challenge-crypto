@@ -159,7 +159,7 @@ describe('changeAmountSell method',() => {
         instance.changeAmountSell(event);
         expect(instance.state.error).toEqual('Você não tem dinheiro suficiente para essa venda');
         expect(instance.state.enableButton).toEqual('ui teal labeled icon disabled button');
-    })
+    },10000)
 
     test('Should pass the trade', async () => {
         
@@ -259,7 +259,7 @@ describe('makeTransaction method',() => {
 
         const transactions = await getUserTransactions('transactions');
         expect(transactions[1].wallet.hash).toEqual(user.wallet.hash);
-    })
+    },11000)
 })
 
 describe('DashboardCards Component', () => {
