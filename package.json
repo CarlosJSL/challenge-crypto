@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "dexie": "^2.0.4",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "fake-indexeddb": "^2.0.4",
     "jquery": "^2.1.4",
     "md5": "^2.2.1",
     "moment": "^2.22.2",
