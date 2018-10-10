@@ -10,7 +10,7 @@ Enzyme.configure({ adapter: new Adapter() })
 window.indexedDB =  indexedDB
 
 beforeEach(() =>{
-    window.localStorage.clear()
+    window.localStorage.clear();
 })
 
 describe('validateForm method', () => {
@@ -55,9 +55,9 @@ describe('handleChange method', () => {
                 id:'email',
                 value: 'carlos@gmail.com'
             }
-        }
+        };
 
-        instance.handleChange(event)
+        instance.handleChange(event);
         expect(instance.state.email).toEqual('carlos@gmail.com');
     })
 })
@@ -66,7 +66,7 @@ describe('doLogin method', () => {
     test('Should not login because the data form is invalid', () => {
         const wrapper = mount(<LoginForm/>);
         const instance = wrapper.instance();
-        instance.setState({email:'teste',password:'teste'})
+        instance.setState({email:'teste',password:'teste'});
 
         expect(instance.validateForm().lenght).not.toBe(0);
     })
@@ -76,7 +76,7 @@ describe('doLogin method', () => {
     test('Should not login because the data form is invalid', () => {
         const wrapper = mount(<LoginForm/>);
         const instance = wrapper.instance();
-        instance.setState({email:'teste',password:'teste'})
+        instance.setState({email:'teste',password:'teste'});
 
         expect(instance.validateForm().lenght).not.toBe(0);
     })
@@ -106,7 +106,7 @@ describe('doLogin method', () => {
                                 "brita_value":0
                             }
                     }
-                )
+                );
         
     })
 })

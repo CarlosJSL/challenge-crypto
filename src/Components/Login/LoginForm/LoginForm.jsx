@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './LoginForm.css'
+import './LoginForm.css';
 import { getAllDataOnDB } from '../../../connectDatabase';
-import LoginRegister from '../LoginRegister/LoginRegister'
+import LoginRegister from '../LoginRegister/LoginRegister';
 
 export default class LoginForm extends Component {
     constructor(props) {
@@ -13,8 +13,8 @@ export default class LoginForm extends Component {
           showRegisterForm:  false,
           errors: []
         };
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange (event) {
@@ -23,6 +23,7 @@ export default class LoginForm extends Component {
 
     validateForm() {
         const errors = [];
+        // eslint-disable-next-line
         const emailPattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
         
         if (!this.state.password.length || !this.state.email.length ) {
@@ -49,8 +50,9 @@ export default class LoginForm extends Component {
                 const user = users.filter(user => user.email === email && user.password === password);
 
                 if (user.length) {
-                    window.localStorage.setItem("user", JSON.stringify(user[0]))
-                    this.props.router.history.push('/dashboard') 
+                    window.localStorage.setItem("user", JSON.stringify(user[0]));
+                    console.log(this.props)
+                    this.props.router.history.push('/dashboard') ;
                  } else { 
                     this.setState({...this.state, errors: ['Usuário ou senha inválidos']});
                  } 
@@ -60,7 +62,7 @@ export default class LoginForm extends Component {
             }
 
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
     }
 
@@ -91,7 +93,7 @@ export default class LoginForm extends Component {
                                     })
                                 }
                                 <p id="register">Você não está cadastrado ainda? 
-                                    <a onClick={()=> this.setState({showRegisterForm: true})}> Cadastre-se aqui!</a>
+                                    <a href = '#!' onClick={()=> this.setState({showRegisterForm: true})}> Cadastre-se aqui!</a>
                                 </p>
                             <button className="ui positive button" type="submit">Sign in</button>
                         </form>

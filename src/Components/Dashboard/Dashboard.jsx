@@ -4,7 +4,7 @@ import DashboardHeader from './DashboardHeader/DashboardHeader'
 import DashboardContent from './DashboardContent/DashboardContent'
 import DashboardTrade from './DashboardTrade/DashboardTrade'
 
-import { getUserAmount, getUserTransactions } from '../../connectDatabase'
+import { getUserAmount, getUserTransactions } from '../../connectDatabase';
 
 export default class Dashboard extends Component {
     
@@ -13,12 +13,12 @@ export default class Dashboard extends Component {
         this.state = {
             userCryptoAmount: '',
             userTransactions: []
-        }
-        this.getUserCryptoAmount = this.getUserCryptoAmount.bind(this)
+        };
+        this.getUserCryptoAmount = this.getUserCryptoAmount.bind(this);
     }
 
     async componentDidMount() {
-        this.setState({...this.state, userTransactions: await getUserTransactions("transactions")})
+        this.setState({...this.state, userTransactions: await getUserTransactions("transactions")});
         
     }
     async getUserCryptoAmount(){

@@ -1,13 +1,13 @@
 import React from 'react';
 import LoginRegister from './LoginRegister';
-import Enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import { mount } from 'enzyme';
 import indexedDB from 'fake-indexeddb';
 import { chargeDB } from '../../../connectDatabase';
 
-Enzyme.configure({ adapter: new Adapter() })
-window.indexedDB =  indexedDB
+Enzyme.configure({ adapter: new Adapter() });
+window.indexedDB =  indexedDB;
 
 beforeEach(() =>{
     window.localStorage.clear();
@@ -54,9 +54,9 @@ describe('handleChange method', () => {
                 id:'email',
                 value: 'carlos@gmail.com'
             }
-        }
+        };
 
-        instance.handleChange(event)
+        instance.handleChange(event);
         expect(instance.state.email).toEqual('carlos@gmail.com');
     })
 })
@@ -75,7 +75,7 @@ describe('doRegister method', () => {
     test('Should not register because the data form is invalid', () => {
         const wrapper = mount(<LoginRegister/>);
         const instance = wrapper.instance();
-        instance.setState({name:'carlos',email:'teste',password:'teste'})
+        instance.setState({name:'carlos',email:'teste',password:'teste'});
 
         expect(instance.validateForm().lenght).not.toBe(0);
     })
@@ -105,10 +105,10 @@ describe('doRegister method', () => {
         instance.setState({name:'carlos jose',email:'teste@gmail.com',password:'123456'});
         await instance.signUp();
         
-        expect(JSON.parse(window.localStorage.getItem("user")).name).toEqual(instance.state.name)
-        expect(JSON.parse(window.localStorage.getItem("user")).email).toEqual(instance.state.email)
-        expect(JSON.parse(window.localStorage.getItem("user")).password).toEqual(instance.state.password)
-        expect(JSON.parse(window.localStorage.getItem("user")).wallet.real_value).toEqual(100000)
+        expect(JSON.parse(window.localStorage.getItem("user")).name).toEqual(instance.state.name);
+        expect(JSON.parse(window.localStorage.getItem("user")).email).toEqual(instance.state.email);
+        expect(JSON.parse(window.localStorage.getItem("user")).password).toEqual(instance.state.password);
+        expect(JSON.parse(window.localStorage.getItem("user")).wallet.real_value).toEqual(100000);
         
     })
 })

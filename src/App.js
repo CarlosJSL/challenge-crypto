@@ -10,7 +10,7 @@ import {chargeDB} from './connectDatabase';
 class App extends Component {
   
   async componentDidMount() {
-    chargeDB()
+    await chargeDB();
   }
 
   render() {

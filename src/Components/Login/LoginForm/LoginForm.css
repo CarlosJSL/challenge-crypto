@@ -24,13 +24,6 @@ a {
     padding-right: 3rem;
 }
 
-/* @media only screen and (max-width: 565px) {
-    
-    .login-main {
-        height: 107vh;
-    }
-} */
-
 @media only screen and (max-width: 600px) {
     .login-main {
         height: 117vh;

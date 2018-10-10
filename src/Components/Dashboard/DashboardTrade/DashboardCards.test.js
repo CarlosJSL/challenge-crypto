@@ -1,9 +1,9 @@
 import React from 'react';
 import DashboardCards from './DashboardCards';
-import Enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import { mount } from 'enzyme';
-import { putValueOnDB, getUserTransactions, chargeDB } from '../../../connectDatabase';
+import { getUserTransactions, chargeDB } from '../../../connectDatabase';
 import indexedDB from 'fake-indexeddb';
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -40,10 +40,10 @@ describe('componentDidMount method', () => {
         expect(typeof instance.state.cryptos[1].sell).toEqual('number');
         expect(instance.state.cryptos[1].symbol).toEqual('$');
 
-        expect(instance.state.userCryptoAmounts.hash).toEqual(user.wallet.hash)
-        expect(instance.state.userCryptoAmounts.real_value).toEqual(user.wallet.real_value)
-        expect(instance.state.userCryptoAmounts.bitcoin_value).toEqual(user.wallet.bitcoin_value)
-        expect(instance.state.userCryptoAmounts.brita_value).toEqual(user.wallet.brita_value)
+        expect(instance.state.userCryptoAmounts.hash).toEqual(user.wallet.hash);
+        expect(instance.state.userCryptoAmounts.real_value).toEqual(user.wallet.real_value);
+        expect(instance.state.userCryptoAmounts.bitcoin_value).toEqual(user.wallet.bitcoin_value);
+        expect(instance.state.userCryptoAmounts.brita_value).toEqual(user.wallet.brita_value);
     },11000)
 })
 
@@ -63,12 +63,14 @@ describe('changeAmount method',() => {
                 bitcoin_value: 0 , 
                 brita_value: 0 
             }
-        }
+        };
+
         const event = {
             target:{
                 value: 100
             }
-        }
+        };
+
         window.localStorage.setItem('user', JSON.stringify(user));
         await chargeDB();
 
@@ -136,13 +138,14 @@ describe('changeAmountSell method',() => {
                 bitcoin_value: 0 , 
                 brita_value: 0 
             }
-        }
+        };
         
         const event = {
             target:{
                 value: 1
             }
-        }
+        };
+
         window.localStorage.setItem('user', JSON.stringify(user));
         await chargeDB();
 
@@ -219,7 +222,7 @@ describe('makeTransaction method',() => {
 
         instance.state.userCryptoAmounts = user.wallet;
         instance.state.cryptoFocus.name = 'bitcoin';
-        instance.state.quantity = 1
+        instance.state.quantity = 1;
         instance.state.real_amount = 30000;
 
         await instance.makeTransaction('buy');
@@ -249,7 +252,7 @@ describe('makeTransaction method',() => {
 
         instance.state.userCryptoAmounts = user.wallet;
         instance.state.cryptoFocus.name = 'bitcoin';
-        instance.state.quantity = 1
+        instance.state.quantity = 1;
         instance.state.real_amount = 30000;
         instance.state.crypto_amount = 1;
         await instance.makeTransaction('sell');

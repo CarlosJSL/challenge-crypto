@@ -14,8 +14,8 @@ export default class LoginRegister extends Component {
           showLoginForm:  false,
           errors: []
         };
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange (event) {
@@ -24,6 +24,7 @@ export default class LoginRegister extends Component {
 
     validateForm() {
         const errors = [];
+        // eslint-disable-next-line
         const emailPattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
         
         if (!this.state.password.length || !this.state.email.length || !this.state.name.length ) {
@@ -102,7 +103,7 @@ export default class LoginRegister extends Component {
                                     })
                                 }
                                 <p id="register">Are you registered ? 
-                                    <a onClick={()=> this.setState({showLoginForm: true})}> Sign in here</a>
+                                    <a href = '#!' onClick={()=> this.setState({showLoginForm: true})}> Sign in here</a>
                                 </p>
                             <button className="ui positive button" type="submit">Sign up</button>
                         </form>

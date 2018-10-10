@@ -26,6 +26,8 @@ h5 {
     color: red
 }
 
-/* .ui.card, .ui.cards>.card {
-    width: 350px;
-} */
+@media only screen and (max-width: 767px) {
+    .ui.modal>.actions {
+        padding: 1rem 1rem 1rem !important;
+    }
+}
