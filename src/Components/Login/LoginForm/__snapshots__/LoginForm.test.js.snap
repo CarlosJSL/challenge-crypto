@@ -1,0 +1,4863 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Component should render 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <LoginForm />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": LoginForm {
+      "_reactInternalFiber": FiberNode {
+        "_debugID": 341,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": FiberNode {
+          "_debugID": 340,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": [Circular],
+          "childExpirationTime": 0,
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {},
+          },
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 338,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": FiberNode {
+              "_debugID": 338,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": [Circular],
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "expirationTime": 1,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="ui four column centered grid"
+                  >
+                    <div
+                      class="column responsive"
+                    >
+                      <form
+                        class="ui form"
+                      >
+                        <div
+                          class="field"
+                        >
+                          <label>
+                            Email
+                          </label>
+                          <input
+                            id="email"
+                            placeholder="Email"
+                            type="email"
+                            value=""
+                          />
+                        </div>
+                        <div
+                          class="field"
+                        >
+                          <label>
+                            Password
+                          </label>
+                          <input
+                            id="password"
+                            placeholder="Password"
+                            type="text"
+                            value=""
+                          />
+                        </div>
+                        <p
+                          id="register"
+                        >
+                          Você não está cadastrado ainda?
+                          <a
+                            href="#!"
+                          >
+                             Cadastre-se aqui!
+                          </a>
+                        </p>
+                        <button
+                          class="ui positive button"
+                          type="submit"
+                        >
+                          Sign in
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 21,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Array [],
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Array [],
+                "timeoutHandle": -1,
+              },
+              "tag": 5,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+              },
+            },
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 32,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={Object {}}
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div
+                  class="ui four column centered grid"
+                >
+                  <div
+                    class="column responsive"
+                  >
+                    <form
+                      class="ui form"
+                    >
+                      <div
+                        class="field"
+                      >
+                        <label>
+                          Email
+                        </label>
+                        <input
+                          id="email"
+                          placeholder="Email"
+                          type="email"
+                          value=""
+                        />
+                      </div>
+                      <div
+                        class="field"
+                      >
+                        <label>
+                          Password
+                        </label>
+                        <input
+                          id="password"
+                          placeholder="Password"
+                          type="text"
+                          value=""
+                        />
+                      </div>
+                      <p
+                        id="register"
+                      >
+                        Você não está cadastrado ainda?
+                        <a
+                          href="#!"
+                        >
+                           Cadastre-se aqui!
+                        </a>
+                      </p>
+                      <button
+                        class="ui positive button"
+                        type="submit"
+                      >
+                        Sign in
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "didError": false,
+              "earliestPendingTime": 0,
+              "earliestSuspendedTime": 0,
+              "expirationTime": 0,
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "interactionThreadID": 21,
+              "latestPendingTime": 0,
+              "latestPingedTime": 0,
+              "latestSuspendedTime": 0,
+              "memoizedInteractions": Array [],
+              "nextExpirationTimeToWorkOn": 0,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "pendingInteractionMap": Array [],
+              "timeoutHandle": -1,
+            },
+            "tag": 5,
+            "treeBaseDuration": 0,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "firstCapturedEffect": null,
+              "firstCapturedUpdate": null,
+              "firstEffect": null,
+              "firstUpdate": null,
+              "lastCapturedEffect": null,
+              "lastCapturedUpdate": null,
+              "lastEffect": null,
+              "lastUpdate": null,
+            },
+          },
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 2,
+          "treeBaseDuration": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_debugSource": null,
+        "actualDuration": 0,
+        "actualStartTime": -1,
+        "alternate": null,
+        "child": FiberNode {
+          "_debugID": 342,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": [Circular],
+          "_debugSource": Object {
+            "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+            "lineNumber": 77,
+          },
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 343,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": Object {
+              "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+              "lineNumber": 78,
+            },
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 344,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": Object {
+                "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                "lineNumber": 79,
+              },
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 345,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": Object {
+                  "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                  "lineNumber": 80,
+                },
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 350,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": Object {
+                    "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                    "lineNumber": 81,
+                  },
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": null,
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": "Email",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": "Email",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 351,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": Object {
+                      "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                      "lineNumber": 82,
+                    },
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 1,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "id": "email",
+                      "onChange": [Function],
+                      "placeholder": "Email",
+                      "type": "email",
+                      "value": "",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "id": "email",
+                      "onChange": [Function],
+                      "placeholder": "Email",
+                      "type": "email",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": null,
+                    "stateNode": <input
+                      id="email"
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />,
+                    "tag": 7,
+                    "treeBaseDuration": 0,
+                    "type": "input",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <label>
+                    Email
+                  </label>,
+                  "tag": 7,
+                  "treeBaseDuration": 0,
+                  "type": "label",
+                  "updateQueue": null,
+                },
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    <label>
+                      Email
+                    </label>,
+                    <input
+                      id="email"
+                      onChange={[Function]}
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />,
+                  ],
+                  "className": "field",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": Array [
+                    <label>
+                      Email
+                    </label>,
+                    <input
+                      id="email"
+                      onChange={[Function]}
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />,
+                  ],
+                  "className": "field",
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": FiberNode {
+                  "_debugID": 346,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": Object {
+                    "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                    "lineNumber": 84,
+                  },
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugID": 352,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": Object {
+                      "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                      "lineNumber": 85,
+                    },
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": "Password",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "children": "Password",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 353,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": Object {
+                        "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                        "lineNumber": 86,
+                      },
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 1,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "id": "password",
+                        "onChange": [Function],
+                        "placeholder": "Password",
+                        "type": "text",
+                        "value": "",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "id": "password",
+                        "onChange": [Function],
+                        "placeholder": "Password",
+                        "type": "text",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": null,
+                      "stateNode": <input
+                        id="password"
+                        placeholder="Password"
+                        type="text"
+                        value=""
+                      />,
+                      "tag": 7,
+                      "treeBaseDuration": 0,
+                      "type": "input",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <label>
+                      Password
+                    </label>,
+                    "tag": 7,
+                    "treeBaseDuration": 0,
+                    "type": "label",
+                    "updateQueue": null,
+                  },
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 1,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": Array [
+                      <label>
+                        Password
+                      </label>,
+                      <input
+                        id="password"
+                        onChange={[Function]}
+                        placeholder="Password"
+                        type="text"
+                        value=""
+                      />,
+                    ],
+                    "className": "field",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": Array [
+                      <label>
+                        Password
+                      </label>,
+                      <input
+                        id="password"
+                        onChange={[Function]}
+                        placeholder="Password"
+                        type="text"
+                        value=""
+                      />,
+                    ],
+                    "className": "field",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 347,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": null,
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 2,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Array [],
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Array [],
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 348,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": Object {
+                        "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                        "lineNumber": 95,
+                      },
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": FiberNode {
+                        "_debugID": 354,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": null,
+                        "_debugSource": null,
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": null,
+                        "childExpirationTime": 0,
+                        "effectTag": 0,
+                        "expirationTime": 0,
+                        "firstContextDependency": null,
+                        "firstEffect": null,
+                        "index": 0,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": "Você não está cadastrado ainda?",
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": "Você não está cadastrado ainda?",
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": FiberNode {
+                          "_debugID": 355,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": [Circular],
+                          "_debugSource": Object {
+                            "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                            "lineNumber": 96,
+                          },
+                          "actualDuration": 0,
+                          "actualStartTime": -1,
+                          "alternate": null,
+                          "child": null,
+                          "childExpirationTime": 0,
+                          "effectTag": 0,
+                          "expirationTime": 0,
+                          "firstContextDependency": null,
+                          "firstEffect": null,
+                          "index": 1,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": Object {
+                            "children": " Cadastre-se aqui!",
+                            "href": "#!",
+                            "onClick": [Function],
+                          },
+                          "memoizedState": null,
+                          "mode": 0,
+                          "nextEffect": null,
+                          "pendingProps": Object {
+                            "children": " Cadastre-se aqui!",
+                            "href": "#!",
+                            "onClick": [Function],
+                          },
+                          "ref": null,
+                          "return": [Circular],
+                          "selfBaseDuration": 0,
+                          "sibling": null,
+                          "stateNode": <a
+                            href="#!"
+                          >
+                             Cadastre-se aqui!
+                          </a>,
+                          "tag": 7,
+                          "treeBaseDuration": 0,
+                          "type": "a",
+                          "updateQueue": null,
+                        },
+                        "stateNode": Você não está cadastrado ainda?,
+                        "tag": 8,
+                        "treeBaseDuration": 0,
+                        "type": null,
+                        "updateQueue": null,
+                      },
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 3,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "children": Array [
+                          "Você não está cadastrado ainda?",
+                          <a
+                            href="#!"
+                            onClick={[Function]}
+                          >
+                             Cadastre-se aqui!
+                          </a>,
+                        ],
+                        "id": "register",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "children": Array [
+                          "Você não está cadastrado ainda?",
+                          <a
+                            href="#!"
+                            onClick={[Function]}
+                          >
+                             Cadastre-se aqui!
+                          </a>,
+                        ],
+                        "id": "register",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": FiberNode {
+                        "_debugID": 349,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": Object {
+                          "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                          "lineNumber": 98,
+                        },
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": null,
+                        "childExpirationTime": 0,
+                        "effectTag": 0,
+                        "expirationTime": 0,
+                        "firstContextDependency": null,
+                        "firstEffect": null,
+                        "index": 4,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {
+                          "children": "Sign in",
+                          "className": "ui positive button",
+                          "type": "submit",
+                        },
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": Object {
+                          "children": "Sign in",
+                          "className": "ui positive button",
+                          "type": "submit",
+                        },
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": null,
+                        "stateNode": <button
+                          class="ui positive button"
+                          type="submit"
+                        >
+                          Sign in
+                        </button>,
+                        "tag": 7,
+                        "treeBaseDuration": 0,
+                        "type": "button",
+                        "updateQueue": null,
+                      },
+                      "stateNode": <p
+                        id="register"
+                      >
+                        Você não está cadastrado ainda?
+                        <a
+                          href="#!"
+                        >
+                           Cadastre-se aqui!
+                        </a>
+                      </p>,
+                      "tag": 7,
+                      "treeBaseDuration": 0,
+                      "type": "p",
+                      "updateQueue": null,
+                    },
+                    "stateNode": null,
+                    "tag": 9,
+                    "treeBaseDuration": 0,
+                    "type": null,
+                    "updateQueue": null,
+                  },
+                  "stateNode": <div
+                    class="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>,
+                  "tag": 7,
+                  "treeBaseDuration": 0,
+                  "type": "div",
+                  "updateQueue": null,
+                },
+                "stateNode": <div
+                  class="field"
+                >
+                  <label>
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>,
+                "tag": 7,
+                "treeBaseDuration": 0,
+                "type": "div",
+                "updateQueue": null,
+              },
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": Array [
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      onChange={[Function]}
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>,
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      onChange={[Function]}
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>,
+                  Array [],
+                  <p
+                    id="register"
+                  >
+                    Você não está cadastrado ainda?
+                    <a
+                      href="#!"
+                      onClick={[Function]}
+                    >
+                       Cadastre-se aqui!
+                    </a>
+                  </p>,
+                  <button
+                    className="ui positive button"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>,
+                ],
+                "className": "ui form",
+                "onSubmit": [Function],
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": Array [
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      onChange={[Function]}
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>,
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      onChange={[Function]}
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>,
+                  Array [],
+                  <p
+                    id="register"
+                  >
+                    Você não está cadastrado ainda?
+                    <a
+                      href="#!"
+                      onClick={[Function]}
+                    >
+                       Cadastre-se aqui!
+                    </a>
+                  </p>,
+                  <button
+                    className="ui positive button"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>,
+                ],
+                "className": "ui form",
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": <form
+                class="ui form"
+              >
+                <div
+                  class="field"
+                >
+                  <label>
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="field"
+                >
+                  <label>
+                    Password
+                  </label>
+                  <input
+                    id="password"
+                    placeholder="Password"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <p
+                  id="register"
+                >
+                  Você não está cadastrado ainda?
+                  <a
+                    href="#!"
+                  >
+                     Cadastre-se aqui!
+                  </a>
+                </p>
+                <button
+                  class="ui positive button"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+              </form>,
+              "tag": 7,
+              "treeBaseDuration": 0,
+              "type": "form",
+              "updateQueue": null,
+            },
+            "childExpirationTime": 0,
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": <form
+                className="ui form"
+                onSubmit={[Function]}
+              >
+                <div
+                  className="field"
+                >
+                  <label>
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    onChange={[Function]}
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="field"
+                >
+                  <label>
+                    Password
+                  </label>
+                  <input
+                    id="password"
+                    onChange={[Function]}
+                    placeholder="Password"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <p
+                  id="register"
+                >
+                  Você não está cadastrado ainda?
+                  <a
+                    href="#!"
+                    onClick={[Function]}
+                  >
+                     Cadastre-se aqui!
+                  </a>
+                </p>
+                <button
+                  className="ui positive button"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+              </form>,
+              "className": "column responsive",
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": <form
+                className="ui form"
+                onSubmit={[Function]}
+              >
+                <div
+                  className="field"
+                >
+                  <label>
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    onChange={[Function]}
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="field"
+                >
+                  <label>
+                    Password
+                  </label>
+                  <input
+                    id="password"
+                    onChange={[Function]}
+                    placeholder="Password"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <p
+                  id="register"
+                >
+                  Você não está cadastrado ainda?
+                  <a
+                    href="#!"
+                    onClick={[Function]}
+                  >
+                     Cadastre-se aqui!
+                  </a>
+                </p>
+                <button
+                  className="ui positive button"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+              </form>,
+              "className": "column responsive",
+            },
+            "ref": null,
+            "return": [Circular],
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": <div
+              class="column responsive"
+            >
+              <form
+                class="ui form"
+              >
+                <div
+                  class="field"
+                >
+                  <label>
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="field"
+                >
+                  <label>
+                    Password
+                  </label>
+                  <input
+                    id="password"
+                    placeholder="Password"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <p
+                  id="register"
+                >
+                  Você não está cadastrado ainda?
+                  <a
+                    href="#!"
+                  >
+                     Cadastre-se aqui!
+                  </a>
+                </p>
+                <button
+                  class="ui positive button"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+              </form>
+            </div>,
+            "tag": 7,
+            "treeBaseDuration": 0,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "childExpirationTime": 0,
+          "effectTag": 0,
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "children": <div
+              className="column responsive"
+            >
+              <form
+                className="ui form"
+                onSubmit={[Function]}
+              >
+                <div
+                  className="field"
+                >
+                  <label>
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    onChange={[Function]}
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="field"
+                >
+                  <label>
+                    Password
+                  </label>
+                  <input
+                    id="password"
+                    onChange={[Function]}
+                    placeholder="Password"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <p
+                  id="register"
+                >
+                  Você não está cadastrado ainda?
+                  <a
+                    href="#!"
+                    onClick={[Function]}
+                  >
+                     Cadastre-se aqui!
+                  </a>
+                </p>
+                <button
+                  className="ui positive button"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+              </form>
+            </div>,
+            "className": "ui four column centered grid",
+          },
+          "memoizedState": null,
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "children": <div
+              className="column responsive"
+            >
+              <form
+                className="ui form"
+                onSubmit={[Function]}
+              >
+                <div
+                  className="field"
+                >
+                  <label>
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    onChange={[Function]}
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="field"
+                >
+                  <label>
+                    Password
+                  </label>
+                  <input
+                    id="password"
+                    onChange={[Function]}
+                    placeholder="Password"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <p
+                  id="register"
+                >
+                  Você não está cadastrado ainda?
+                  <a
+                    href="#!"
+                    onClick={[Function]}
+                  >
+                     Cadastre-se aqui!
+                  </a>
+                </p>
+                <button
+                  className="ui positive button"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+              </form>
+            </div>,
+            "className": "ui four column centered grid",
+          },
+          "ref": null,
+          "return": [Circular],
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": <div
+            class="ui four column centered grid"
+          >
+            <div
+              class="column responsive"
+            >
+              <form
+                class="ui form"
+              >
+                <div
+                  class="field"
+                >
+                  <label>
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="field"
+                >
+                  <label>
+                    Password
+                  </label>
+                  <input
+                    id="password"
+                    placeholder="Password"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <p
+                  id="register"
+                >
+                  Você não está cadastrado ainda?
+                  <a
+                    href="#!"
+                  >
+                     Cadastre-se aqui!
+                  </a>
+                </p>
+                <button
+                  class="ui positive button"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+              </form>
+            </div>
+          </div>,
+          "tag": 7,
+          "treeBaseDuration": 0,
+          "type": "div",
+          "updateQueue": null,
+        },
+        "childExpirationTime": 0,
+        "effectTag": 1,
+        "expirationTime": 0,
+        "firstContextDependency": null,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": Object {},
+        "memoizedState": Object {
+          "email": "",
+          "errors": Array [],
+          "password": "",
+          "showRegisterForm": false,
+        },
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": Object {},
+        "ref": null,
+        "return": FiberNode {
+          "_debugID": 340,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": [Circular],
+          "childExpirationTime": 0,
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {},
+          },
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 338,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": FiberNode {
+              "_debugID": 338,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": [Circular],
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "expirationTime": 1,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="ui four column centered grid"
+                  >
+                    <div
+                      class="column responsive"
+                    >
+                      <form
+                        class="ui form"
+                      >
+                        <div
+                          class="field"
+                        >
+                          <label>
+                            Email
+                          </label>
+                          <input
+                            id="email"
+                            placeholder="Email"
+                            type="email"
+                            value=""
+                          />
+                        </div>
+                        <div
+                          class="field"
+                        >
+                          <label>
+                            Password
+                          </label>
+                          <input
+                            id="password"
+                            placeholder="Password"
+                            type="text"
+                            value=""
+                          />
+                        </div>
+                        <p
+                          id="register"
+                        >
+                          Você não está cadastrado ainda?
+                          <a
+                            href="#!"
+                          >
+                             Cadastre-se aqui!
+                          </a>
+                        </p>
+                        <button
+                          class="ui positive button"
+                          type="submit"
+                        >
+                          Sign in
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 21,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Array [],
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Array [],
+                "timeoutHandle": -1,
+              },
+              "tag": 5,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+              },
+            },
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 32,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={Object {}}
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div
+                  class="ui four column centered grid"
+                >
+                  <div
+                    class="column responsive"
+                  >
+                    <form
+                      class="ui form"
+                    >
+                      <div
+                        class="field"
+                      >
+                        <label>
+                          Email
+                        </label>
+                        <input
+                          id="email"
+                          placeholder="Email"
+                          type="email"
+                          value=""
+                        />
+                      </div>
+                      <div
+                        class="field"
+                      >
+                        <label>
+                          Password
+                        </label>
+                        <input
+                          id="password"
+                          placeholder="Password"
+                          type="text"
+                          value=""
+                        />
+                      </div>
+                      <p
+                        id="register"
+                      >
+                        Você não está cadastrado ainda?
+                        <a
+                          href="#!"
+                        >
+                           Cadastre-se aqui!
+                        </a>
+                      </p>
+                      <button
+                        class="ui positive button"
+                        type="submit"
+                      >
+                        Sign in
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "didError": false,
+              "earliestPendingTime": 0,
+              "earliestSuspendedTime": 0,
+              "expirationTime": 0,
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "interactionThreadID": 21,
+              "latestPendingTime": 0,
+              "latestPingedTime": 0,
+              "latestSuspendedTime": 0,
+              "memoizedInteractions": Array [],
+              "nextExpirationTimeToWorkOn": 0,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "pendingInteractionMap": Array [],
+              "timeoutHandle": -1,
+            },
+            "tag": 5,
+            "treeBaseDuration": 0,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "firstCapturedEffect": null,
+              "firstCapturedUpdate": null,
+              "firstEffect": null,
+              "firstUpdate": null,
+              "lastCapturedEffect": null,
+              "lastCapturedUpdate": null,
+              "lastEffect": null,
+              "lastUpdate": null,
+            },
+          },
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 2,
+          "treeBaseDuration": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "selfBaseDuration": 0,
+        "sibling": null,
+        "stateNode": [Circular],
+        "tag": 2,
+        "treeBaseDuration": 0,
+        "type": [Function],
+        "updateQueue": null,
+      },
+      "_reactInternalInstance": Object {},
+      "context": Object {},
+      "handleChange": [Function],
+      "handleSubmit": [Function],
+      "props": Object {},
+      "refs": Object {},
+      "state": Object {
+        "email": "",
+        "errors": Array [],
+        "password": "",
+        "showRegisterForm": false,
+      },
+      "updater": Object {
+        "enqueueForceUpdate": [Function],
+        "enqueueReplaceState": [Function],
+        "enqueueSetState": [Function],
+        "isMounted": [Function],
+      },
+    },
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {},
+    "ref": null,
+    "rendered": Object {
+      "instance": <div
+        class="ui four column centered grid"
+      >
+        <div
+          class="column responsive"
+        >
+          <form
+            class="ui form"
+          >
+            <div
+              class="field"
+            >
+              <label>
+                Email
+              </label>
+              <input
+                id="email"
+                placeholder="Email"
+                type="email"
+                value=""
+              />
+            </div>
+            <div
+              class="field"
+            >
+              <label>
+                Password
+              </label>
+              <input
+                id="password"
+                placeholder="Password"
+                type="text"
+                value=""
+              />
+            </div>
+            <p
+              id="register"
+            >
+              Você não está cadastrado ainda?
+              <a
+                href="#!"
+              >
+                 Cadastre-se aqui!
+              </a>
+            </p>
+            <button
+              class="ui positive button"
+              type="submit"
+            >
+              Sign in
+            </button>
+          </form>
+        </div>
+      </div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="column responsive"
+        >
+          <form
+            className="ui form"
+            onSubmit={[Function]}
+          >
+            <div
+              className="field"
+            >
+              <label>
+                Email
+              </label>
+              <input
+                id="email"
+                onChange={[Function]}
+                placeholder="Email"
+                type="email"
+                value=""
+              />
+            </div>
+            <div
+              className="field"
+            >
+              <label>
+                Password
+              </label>
+              <input
+                id="password"
+                onChange={[Function]}
+                placeholder="Password"
+                type="text"
+                value=""
+              />
+            </div>
+            <p
+              id="register"
+            >
+              Você não está cadastrado ainda?
+              <a
+                href="#!"
+                onClick={[Function]}
+              >
+                 Cadastre-se aqui!
+              </a>
+            </p>
+            <button
+              className="ui positive button"
+              type="submit"
+            >
+              Sign in
+            </button>
+          </form>
+        </div>,
+        "className": "ui four column centered grid",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <div
+            class="column responsive"
+          >
+            <form
+              class="ui form"
+            >
+              <div
+                class="field"
+              >
+                <label>
+                  Email
+                </label>
+                <input
+                  id="email"
+                  placeholder="Email"
+                  type="email"
+                  value=""
+                />
+              </div>
+              <div
+                class="field"
+              >
+                <label>
+                  Password
+                </label>
+                <input
+                  id="password"
+                  placeholder="Password"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <p
+                id="register"
+              >
+                Você não está cadastrado ainda?
+                <a
+                  href="#!"
+                >
+                   Cadastre-se aqui!
+                </a>
+              </p>
+              <button
+                class="ui positive button"
+                type="submit"
+              >
+                Sign in
+              </button>
+            </form>
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <form
+              className="ui form"
+              onSubmit={[Function]}
+            >
+              <div
+                className="field"
+              >
+                <label>
+                  Email
+                </label>
+                <input
+                  id="email"
+                  onChange={[Function]}
+                  placeholder="Email"
+                  type="email"
+                  value=""
+                />
+              </div>
+              <div
+                className="field"
+              >
+                <label>
+                  Password
+                </label>
+                <input
+                  id="password"
+                  onChange={[Function]}
+                  placeholder="Password"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <p
+                id="register"
+              >
+                Você não está cadastrado ainda?
+                <a
+                  href="#!"
+                  onClick={[Function]}
+                >
+                   Cadastre-se aqui!
+                </a>
+              </p>
+              <button
+                className="ui positive button"
+                type="submit"
+              >
+                Sign in
+              </button>
+            </form>,
+            "className": "column responsive",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <form
+                class="ui form"
+              >
+                <div
+                  class="field"
+                >
+                  <label>
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="field"
+                >
+                  <label>
+                    Password
+                  </label>
+                  <input
+                    id="password"
+                    placeholder="Password"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <p
+                  id="register"
+                >
+                  Você não está cadastrado ainda?
+                  <a
+                    href="#!"
+                  >
+                     Cadastre-se aqui!
+                  </a>
+                </p>
+                <button
+                  class="ui positive button"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+              </form>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      onChange={[Function]}
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>,
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      onChange={[Function]}
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>,
+                  Array [],
+                  <p
+                    id="register"
+                  >
+                    Você não está cadastrado ainda?
+                    <a
+                      href="#!"
+                      onClick={[Function]}
+                    >
+                       Cadastre-se aqui!
+                    </a>
+                  </p>,
+                  <button
+                    className="ui positive button"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>,
+                ],
+                "className": "ui form",
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <div
+                    class="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label>
+                        Email
+                      </label>,
+                      <input
+                        id="email"
+                        onChange={[Function]}
+                        placeholder="Email"
+                        type="email"
+                        value=""
+                      />,
+                    ],
+                    "className": "field",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <label>
+                        Email
+                      </label>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Email",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Email",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": <input
+                        id="email"
+                        placeholder="Email"
+                        type="email"
+                        value=""
+                      />,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "id": "email",
+                        "onChange": [Function],
+                        "placeholder": "Email",
+                        "type": "email",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                      ],
+                      "type": "input",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": <div
+                    class="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label>
+                        Password
+                      </label>,
+                      <input
+                        id="password"
+                        onChange={[Function]}
+                        placeholder="Password"
+                        type="text"
+                        value=""
+                      />,
+                    ],
+                    "className": "field",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <label>
+                        Password
+                      </label>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Password",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Password",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": <input
+                        id="password"
+                        placeholder="Password"
+                        type="text"
+                        value=""
+                      />,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "id": "password",
+                        "onChange": [Function],
+                        "placeholder": "Password",
+                        "type": "text",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                      ],
+                      "type": "input",
+                    },
+                  ],
+                  "type": "div",
+                },
+                null,
+                Object {
+                  "instance": <p
+                    id="register"
+                  >
+                    Você não está cadastrado ainda?
+                    <a
+                      href="#!"
+                    >
+                       Cadastre-se aqui!
+                    </a>
+                  </p>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Você não está cadastrado ainda?",
+                      <a
+                        href="#!"
+                        onClick={[Function]}
+                      >
+                         Cadastre-se aqui!
+                      </a>,
+                    ],
+                    "id": "register",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Você não está cadastrado ainda?",
+                    Object {
+                      "instance": <a
+                        href="#!"
+                      >
+                         Cadastre-se aqui!
+                      </a>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": " Cadastre-se aqui!",
+                        "href": "#!",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        " Cadastre-se aqui!",
+                      ],
+                      "type": "a",
+                    },
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": <button
+                    class="ui positive button"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Sign in",
+                    "className": "ui positive button",
+                    "type": "submit",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Sign in",
+                  ],
+                  "type": "button",
+                },
+              ],
+              "type": "form",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": LoginForm {
+        "_reactInternalFiber": FiberNode {
+          "_debugID": 341,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": FiberNode {
+            "_debugID": 340,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 1,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 338,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": FiberNode {
+                "_debugID": 338,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": [Circular],
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "expirationTime": 1,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div
+                      class="ui four column centered grid"
+                    >
+                      <div
+                        class="column responsive"
+                      >
+                        <form
+                          class="ui form"
+                        >
+                          <div
+                            class="field"
+                          >
+                            <label>
+                              Email
+                            </label>
+                            <input
+                              id="email"
+                              placeholder="Email"
+                              type="email"
+                              value=""
+                            />
+                          </div>
+                          <div
+                            class="field"
+                          >
+                            <label>
+                              Password
+                            </label>
+                            <input
+                              id="password"
+                              placeholder="Password"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                          <p
+                            id="register"
+                          >
+                            Você não está cadastrado ainda?
+                            <a
+                              href="#!"
+                            >
+                               Cadastre-se aqui!
+                            </a>
+                          </p>
+                          <button
+                            class="ui positive button"
+                            type="submit"
+                          >
+                            Sign in
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "didError": false,
+                  "earliestPendingTime": 0,
+                  "earliestSuspendedTime": 0,
+                  "expirationTime": 0,
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "interactionThreadID": 21,
+                  "latestPendingTime": 0,
+                  "latestPingedTime": 0,
+                  "latestSuspendedTime": 0,
+                  "memoizedInteractions": Array [],
+                  "nextExpirationTimeToWorkOn": 0,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "pendingInteractionMap": Array [],
+                  "timeoutHandle": -1,
+                },
+                "tag": 5,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "firstCapturedEffect": null,
+                  "firstCapturedUpdate": null,
+                  "firstEffect": null,
+                  "firstUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                  "lastCapturedEffect": null,
+                  "lastCapturedUpdate": null,
+                  "lastEffect": null,
+                  "lastUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                },
+              },
+              "child": [Circular],
+              "childExpirationTime": 0,
+              "effectTag": 32,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="ui four column centered grid"
+                  >
+                    <div
+                      class="column responsive"
+                    >
+                      <form
+                        class="ui form"
+                      >
+                        <div
+                          class="field"
+                        >
+                          <label>
+                            Email
+                          </label>
+                          <input
+                            id="email"
+                            placeholder="Email"
+                            type="email"
+                            value=""
+                          />
+                        </div>
+                        <div
+                          class="field"
+                        >
+                          <label>
+                            Password
+                          </label>
+                          <input
+                            id="password"
+                            placeholder="Password"
+                            type="text"
+                            value=""
+                          />
+                        </div>
+                        <p
+                          id="register"
+                        >
+                          Você não está cadastrado ainda?
+                          <a
+                            href="#!"
+                          >
+                             Cadastre-se aqui!
+                          </a>
+                        </p>
+                        <button
+                          class="ui positive button"
+                          type="submit"
+                        >
+                          Sign in
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 21,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Array [],
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Array [],
+                "timeoutHandle": -1,
+              },
+              "tag": 5,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={Object {}}
+                  />,
+                },
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": null,
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": null,
+              },
+            },
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {},
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {},
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 2,
+            "treeBaseDuration": 0,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 342,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": Object {
+              "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+              "lineNumber": 77,
+            },
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 343,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": Object {
+                "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                "lineNumber": 78,
+              },
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 344,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": Object {
+                  "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                  "lineNumber": 79,
+                },
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 345,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": Object {
+                    "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                    "lineNumber": 80,
+                  },
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugID": 350,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": Object {
+                      "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                      "lineNumber": 81,
+                    },
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": "Email",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "children": "Email",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 351,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": Object {
+                        "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                        "lineNumber": 82,
+                      },
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 1,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "id": "email",
+                        "onChange": [Function],
+                        "placeholder": "Email",
+                        "type": "email",
+                        "value": "",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "id": "email",
+                        "onChange": [Function],
+                        "placeholder": "Email",
+                        "type": "email",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": null,
+                      "stateNode": <input
+                        id="email"
+                        placeholder="Email"
+                        type="email"
+                        value=""
+                      />,
+                      "tag": 7,
+                      "treeBaseDuration": 0,
+                      "type": "input",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <label>
+                      Email
+                    </label>,
+                    "tag": 7,
+                    "treeBaseDuration": 0,
+                    "type": "label",
+                    "updateQueue": null,
+                  },
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": Array [
+                      <label>
+                        Email
+                      </label>,
+                      <input
+                        id="email"
+                        onChange={[Function]}
+                        placeholder="Email"
+                        type="email"
+                        value=""
+                      />,
+                    ],
+                    "className": "field",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": Array [
+                      <label>
+                        Email
+                      </label>,
+                      <input
+                        id="email"
+                        onChange={[Function]}
+                        placeholder="Email"
+                        type="email"
+                        value=""
+                      />,
+                    ],
+                    "className": "field",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 346,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": Object {
+                      "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                      "lineNumber": 84,
+                    },
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": FiberNode {
+                      "_debugID": 352,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": Object {
+                        "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                        "lineNumber": 85,
+                      },
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 0,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "children": "Password",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "children": "Password",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": FiberNode {
+                        "_debugID": 353,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": Object {
+                          "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                          "lineNumber": 86,
+                        },
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": null,
+                        "childExpirationTime": 0,
+                        "effectTag": 0,
+                        "expirationTime": 0,
+                        "firstContextDependency": null,
+                        "firstEffect": null,
+                        "index": 1,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {
+                          "id": "password",
+                          "onChange": [Function],
+                          "placeholder": "Password",
+                          "type": "text",
+                          "value": "",
+                        },
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": Object {
+                          "id": "password",
+                          "onChange": [Function],
+                          "placeholder": "Password",
+                          "type": "text",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": null,
+                        "stateNode": <input
+                          id="password"
+                          placeholder="Password"
+                          type="text"
+                          value=""
+                        />,
+                        "tag": 7,
+                        "treeBaseDuration": 0,
+                        "type": "input",
+                        "updateQueue": null,
+                      },
+                      "stateNode": <label>
+                        Password
+                      </label>,
+                      "tag": 7,
+                      "treeBaseDuration": 0,
+                      "type": "label",
+                      "updateQueue": null,
+                    },
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 1,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": Array [
+                        <label>
+                          Password
+                        </label>,
+                        <input
+                          id="password"
+                          onChange={[Function]}
+                          placeholder="Password"
+                          type="text"
+                          value=""
+                        />,
+                      ],
+                      "className": "field",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "children": Array [
+                        <label>
+                          Password
+                        </label>,
+                        <input
+                          id="password"
+                          onChange={[Function]}
+                          placeholder="Password"
+                          type="text"
+                          value=""
+                        />,
+                      ],
+                      "className": "field",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 347,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": null,
+                      "_debugSource": null,
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 2,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Array [],
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Array [],
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": FiberNode {
+                        "_debugID": 348,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": Object {
+                          "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                          "lineNumber": 95,
+                        },
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": FiberNode {
+                          "_debugID": 354,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": null,
+                          "_debugSource": null,
+                          "actualDuration": 0,
+                          "actualStartTime": -1,
+                          "alternate": null,
+                          "child": null,
+                          "childExpirationTime": 0,
+                          "effectTag": 0,
+                          "expirationTime": 0,
+                          "firstContextDependency": null,
+                          "firstEffect": null,
+                          "index": 0,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": "Você não está cadastrado ainda?",
+                          "memoizedState": null,
+                          "mode": 0,
+                          "nextEffect": null,
+                          "pendingProps": "Você não está cadastrado ainda?",
+                          "ref": null,
+                          "return": [Circular],
+                          "selfBaseDuration": 0,
+                          "sibling": FiberNode {
+                            "_debugID": 355,
+                            "_debugIsCurrentlyTiming": false,
+                            "_debugOwner": [Circular],
+                            "_debugSource": Object {
+                              "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                              "lineNumber": 96,
+                            },
+                            "actualDuration": 0,
+                            "actualStartTime": -1,
+                            "alternate": null,
+                            "child": null,
+                            "childExpirationTime": 0,
+                            "effectTag": 0,
+                            "expirationTime": 0,
+                            "firstContextDependency": null,
+                            "firstEffect": null,
+                            "index": 1,
+                            "key": null,
+                            "lastEffect": null,
+                            "memoizedProps": Object {
+                              "children": " Cadastre-se aqui!",
+                              "href": "#!",
+                              "onClick": [Function],
+                            },
+                            "memoizedState": null,
+                            "mode": 0,
+                            "nextEffect": null,
+                            "pendingProps": Object {
+                              "children": " Cadastre-se aqui!",
+                              "href": "#!",
+                              "onClick": [Function],
+                            },
+                            "ref": null,
+                            "return": [Circular],
+                            "selfBaseDuration": 0,
+                            "sibling": null,
+                            "stateNode": <a
+                              href="#!"
+                            >
+                               Cadastre-se aqui!
+                            </a>,
+                            "tag": 7,
+                            "treeBaseDuration": 0,
+                            "type": "a",
+                            "updateQueue": null,
+                          },
+                          "stateNode": Você não está cadastrado ainda?,
+                          "tag": 8,
+                          "treeBaseDuration": 0,
+                          "type": null,
+                          "updateQueue": null,
+                        },
+                        "childExpirationTime": 0,
+                        "effectTag": 0,
+                        "expirationTime": 0,
+                        "firstContextDependency": null,
+                        "firstEffect": null,
+                        "index": 3,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {
+                          "children": Array [
+                            "Você não está cadastrado ainda?",
+                            <a
+                              href="#!"
+                              onClick={[Function]}
+                            >
+                               Cadastre-se aqui!
+                            </a>,
+                          ],
+                          "id": "register",
+                        },
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": Object {
+                          "children": Array [
+                            "Você não está cadastrado ainda?",
+                            <a
+                              href="#!"
+                              onClick={[Function]}
+                            >
+                               Cadastre-se aqui!
+                            </a>,
+                          ],
+                          "id": "register",
+                        },
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": FiberNode {
+                          "_debugID": 349,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": [Circular],
+                          "_debugSource": Object {
+                            "fileName": "/home/carlos/Área de Trabalho/projetos/challenge-crypto/src/Components/Login/LoginForm/LoginForm.jsx",
+                            "lineNumber": 98,
+                          },
+                          "actualDuration": 0,
+                          "actualStartTime": -1,
+                          "alternate": null,
+                          "child": null,
+                          "childExpirationTime": 0,
+                          "effectTag": 0,
+                          "expirationTime": 0,
+                          "firstContextDependency": null,
+                          "firstEffect": null,
+                          "index": 4,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": Object {
+                            "children": "Sign in",
+                            "className": "ui positive button",
+                            "type": "submit",
+                          },
+                          "memoizedState": null,
+                          "mode": 0,
+                          "nextEffect": null,
+                          "pendingProps": Object {
+                            "children": "Sign in",
+                            "className": "ui positive button",
+                            "type": "submit",
+                          },
+                          "ref": null,
+                          "return": [Circular],
+                          "selfBaseDuration": 0,
+                          "sibling": null,
+                          "stateNode": <button
+                            class="ui positive button"
+                            type="submit"
+                          >
+                            Sign in
+                          </button>,
+                          "tag": 7,
+                          "treeBaseDuration": 0,
+                          "type": "button",
+                          "updateQueue": null,
+                        },
+                        "stateNode": <p
+                          id="register"
+                        >
+                          Você não está cadastrado ainda?
+                          <a
+                            href="#!"
+                          >
+                             Cadastre-se aqui!
+                          </a>
+                        </p>,
+                        "tag": 7,
+                        "treeBaseDuration": 0,
+                        "type": "p",
+                        "updateQueue": null,
+                      },
+                      "stateNode": null,
+                      "tag": 9,
+                      "treeBaseDuration": 0,
+                      "type": null,
+                      "updateQueue": null,
+                    },
+                    "stateNode": <div
+                      class="field"
+                    >
+                      <label>
+                        Password
+                      </label>
+                      <input
+                        id="password"
+                        placeholder="Password"
+                        type="text"
+                        value=""
+                      />
+                    </div>,
+                    "tag": 7,
+                    "treeBaseDuration": 0,
+                    "type": "div",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <div
+                    class="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>,
+                  "tag": 7,
+                  "treeBaseDuration": 0,
+                  "type": "div",
+                  "updateQueue": null,
+                },
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    <div
+                      className="field"
+                    >
+                      <label>
+                        Email
+                      </label>
+                      <input
+                        id="email"
+                        onChange={[Function]}
+                        placeholder="Email"
+                        type="email"
+                        value=""
+                      />
+                    </div>,
+                    <div
+                      className="field"
+                    >
+                      <label>
+                        Password
+                      </label>
+                      <input
+                        id="password"
+                        onChange={[Function]}
+                        placeholder="Password"
+                        type="text"
+                        value=""
+                      />
+                    </div>,
+                    Array [],
+                    <p
+                      id="register"
+                    >
+                      Você não está cadastrado ainda?
+                      <a
+                        href="#!"
+                        onClick={[Function]}
+                      >
+                         Cadastre-se aqui!
+                      </a>
+                    </p>,
+                    <button
+                      className="ui positive button"
+                      type="submit"
+                    >
+                      Sign in
+                    </button>,
+                  ],
+                  "className": "ui form",
+                  "onSubmit": [Function],
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": Array [
+                    <div
+                      className="field"
+                    >
+                      <label>
+                        Email
+                      </label>
+                      <input
+                        id="email"
+                        onChange={[Function]}
+                        placeholder="Email"
+                        type="email"
+                        value=""
+                      />
+                    </div>,
+                    <div
+                      className="field"
+                    >
+                      <label>
+                        Password
+                      </label>
+                      <input
+                        id="password"
+                        onChange={[Function]}
+                        placeholder="Password"
+                        type="text"
+                        value=""
+                      />
+                    </div>,
+                    Array [],
+                    <p
+                      id="register"
+                    >
+                      Você não está cadastrado ainda?
+                      <a
+                        href="#!"
+                        onClick={[Function]}
+                      >
+                         Cadastre-se aqui!
+                      </a>
+                    </p>,
+                    <button
+                      className="ui positive button"
+                      type="submit"
+                    >
+                      Sign in
+                    </button>,
+                  ],
+                  "className": "ui form",
+                  "onSubmit": [Function],
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": <form
+                  class="ui form"
+                >
+                  <div
+                    class="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    class="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    id="register"
+                  >
+                    Você não está cadastrado ainda?
+                    <a
+                      href="#!"
+                    >
+                       Cadastre-se aqui!
+                    </a>
+                  </p>
+                  <button
+                    class="ui positive button"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>
+                </form>,
+                "tag": 7,
+                "treeBaseDuration": 0,
+                "type": "form",
+                "updateQueue": null,
+              },
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": <form
+                  className="ui form"
+                  onSubmit={[Function]}
+                >
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      onChange={[Function]}
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      onChange={[Function]}
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    id="register"
+                  >
+                    Você não está cadastrado ainda?
+                    <a
+                      href="#!"
+                      onClick={[Function]}
+                    >
+                       Cadastre-se aqui!
+                    </a>
+                  </p>
+                  <button
+                    className="ui positive button"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>
+                </form>,
+                "className": "column responsive",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": <form
+                  className="ui form"
+                  onSubmit={[Function]}
+                >
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      onChange={[Function]}
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      onChange={[Function]}
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    id="register"
+                  >
+                    Você não está cadastrado ainda?
+                    <a
+                      href="#!"
+                      onClick={[Function]}
+                    >
+                       Cadastre-se aqui!
+                    </a>
+                  </p>
+                  <button
+                    className="ui positive button"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>
+                </form>,
+                "className": "column responsive",
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": <div
+                class="column responsive"
+              >
+                <form
+                  class="ui form"
+                >
+                  <div
+                    class="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    class="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    id="register"
+                  >
+                    Você não está cadastrado ainda?
+                    <a
+                      href="#!"
+                    >
+                       Cadastre-se aqui!
+                    </a>
+                  </p>
+                  <button
+                    class="ui positive button"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>
+                </form>
+              </div>,
+              "tag": 7,
+              "treeBaseDuration": 0,
+              "type": "div",
+              "updateQueue": null,
+            },
+            "childExpirationTime": 0,
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": <div
+                className="column responsive"
+              >
+                <form
+                  className="ui form"
+                  onSubmit={[Function]}
+                >
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      onChange={[Function]}
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      onChange={[Function]}
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    id="register"
+                  >
+                    Você não está cadastrado ainda?
+                    <a
+                      href="#!"
+                      onClick={[Function]}
+                    >
+                       Cadastre-se aqui!
+                    </a>
+                  </p>
+                  <button
+                    className="ui positive button"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>
+                </form>
+              </div>,
+              "className": "ui four column centered grid",
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": <div
+                className="column responsive"
+              >
+                <form
+                  className="ui form"
+                  onSubmit={[Function]}
+                >
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      onChange={[Function]}
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      onChange={[Function]}
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    id="register"
+                  >
+                    Você não está cadastrado ainda?
+                    <a
+                      href="#!"
+                      onClick={[Function]}
+                    >
+                       Cadastre-se aqui!
+                    </a>
+                  </p>
+                  <button
+                    className="ui positive button"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>
+                </form>
+              </div>,
+              "className": "ui four column centered grid",
+            },
+            "ref": null,
+            "return": [Circular],
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": <div
+              class="ui four column centered grid"
+            >
+              <div
+                class="column responsive"
+              >
+                <form
+                  class="ui form"
+                >
+                  <div
+                    class="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    class="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    id="register"
+                  >
+                    Você não está cadastrado ainda?
+                    <a
+                      href="#!"
+                    >
+                       Cadastre-se aqui!
+                    </a>
+                  </p>
+                  <button
+                    class="ui positive button"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>
+                </form>
+              </div>
+            </div>,
+            "tag": 7,
+            "treeBaseDuration": 0,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "childExpirationTime": 0,
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {},
+          "memoizedState": Object {
+            "email": "",
+            "errors": Array [],
+            "password": "",
+            "showRegisterForm": false,
+          },
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {},
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 340,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 1,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 338,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": FiberNode {
+                "_debugID": 338,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": [Circular],
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "expirationTime": 1,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div
+                      class="ui four column centered grid"
+                    >
+                      <div
+                        class="column responsive"
+                      >
+                        <form
+                          class="ui form"
+                        >
+                          <div
+                            class="field"
+                          >
+                            <label>
+                              Email
+                            </label>
+                            <input
+                              id="email"
+                              placeholder="Email"
+                              type="email"
+                              value=""
+                            />
+                          </div>
+                          <div
+                            class="field"
+                          >
+                            <label>
+                              Password
+                            </label>
+                            <input
+                              id="password"
+                              placeholder="Password"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                          <p
+                            id="register"
+                          >
+                            Você não está cadastrado ainda?
+                            <a
+                              href="#!"
+                            >
+                               Cadastre-se aqui!
+                            </a>
+                          </p>
+                          <button
+                            class="ui positive button"
+                            type="submit"
+                          >
+                            Sign in
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "didError": false,
+                  "earliestPendingTime": 0,
+                  "earliestSuspendedTime": 0,
+                  "expirationTime": 0,
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "interactionThreadID": 21,
+                  "latestPendingTime": 0,
+                  "latestPingedTime": 0,
+                  "latestSuspendedTime": 0,
+                  "memoizedInteractions": Array [],
+                  "nextExpirationTimeToWorkOn": 0,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "pendingInteractionMap": Array [],
+                  "timeoutHandle": -1,
+                },
+                "tag": 5,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "firstCapturedEffect": null,
+                  "firstCapturedUpdate": null,
+                  "firstEffect": null,
+                  "firstUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                  "lastCapturedEffect": null,
+                  "lastCapturedUpdate": null,
+                  "lastEffect": null,
+                  "lastUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                },
+              },
+              "child": [Circular],
+              "childExpirationTime": 0,
+              "effectTag": 32,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="ui four column centered grid"
+                  >
+                    <div
+                      class="column responsive"
+                    >
+                      <form
+                        class="ui form"
+                      >
+                        <div
+                          class="field"
+                        >
+                          <label>
+                            Email
+                          </label>
+                          <input
+                            id="email"
+                            placeholder="Email"
+                            type="email"
+                            value=""
+                          />
+                        </div>
+                        <div
+                          class="field"
+                        >
+                          <label>
+                            Password
+                          </label>
+                          <input
+                            id="password"
+                            placeholder="Password"
+                            type="text"
+                            value=""
+                          />
+                        </div>
+                        <p
+                          id="register"
+                        >
+                          Você não está cadastrado ainda?
+                          <a
+                            href="#!"
+                          >
+                             Cadastre-se aqui!
+                          </a>
+                        </p>
+                        <button
+                          class="ui positive button"
+                          type="submit"
+                        >
+                          Sign in
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 21,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Array [],
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Array [],
+                "timeoutHandle": -1,
+              },
+              "tag": 5,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={Object {}}
+                  />,
+                },
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": null,
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": null,
+              },
+            },
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {},
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {},
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 2,
+            "treeBaseDuration": 0,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": [Circular],
+          "tag": 2,
+          "treeBaseDuration": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_reactInternalInstance": Object {},
+        "context": Object {},
+        "handleChange": [Function],
+        "handleSubmit": [Function],
+        "props": Object {},
+        "refs": Object {},
+        "state": Object {
+          "email": "",
+          "errors": Array [],
+          "password": "",
+          "showRegisterForm": false,
+        },
+        "updater": Object {
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+        },
+      },
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {},
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="ui four column centered grid"
+        >
+          <div
+            class="column responsive"
+          >
+            <form
+              class="ui form"
+            >
+              <div
+                class="field"
+              >
+                <label>
+                  Email
+                </label>
+                <input
+                  id="email"
+                  placeholder="Email"
+                  type="email"
+                  value=""
+                />
+              </div>
+              <div
+                class="field"
+              >
+                <label>
+                  Password
+                </label>
+                <input
+                  id="password"
+                  placeholder="Password"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <p
+                id="register"
+              >
+                Você não está cadastrado ainda?
+                <a
+                  href="#!"
+                >
+                   Cadastre-se aqui!
+                </a>
+              </p>
+              <button
+                class="ui positive button"
+                type="submit"
+              >
+                Sign in
+              </button>
+            </form>
+          </div>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="column responsive"
+          >
+            <form
+              className="ui form"
+              onSubmit={[Function]}
+            >
+              <div
+                className="field"
+              >
+                <label>
+                  Email
+                </label>
+                <input
+                  id="email"
+                  onChange={[Function]}
+                  placeholder="Email"
+                  type="email"
+                  value=""
+                />
+              </div>
+              <div
+                className="field"
+              >
+                <label>
+                  Password
+                </label>
+                <input
+                  id="password"
+                  onChange={[Function]}
+                  placeholder="Password"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <p
+                id="register"
+              >
+                Você não está cadastrado ainda?
+                <a
+                  href="#!"
+                  onClick={[Function]}
+                >
+                   Cadastre-se aqui!
+                </a>
+              </p>
+              <button
+                className="ui positive button"
+                type="submit"
+              >
+                Sign in
+              </button>
+            </form>
+          </div>,
+          "className": "ui four column centered grid",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <div
+              class="column responsive"
+            >
+              <form
+                class="ui form"
+              >
+                <div
+                  class="field"
+                >
+                  <label>
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="field"
+                >
+                  <label>
+                    Password
+                  </label>
+                  <input
+                    id="password"
+                    placeholder="Password"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <p
+                  id="register"
+                >
+                  Você não está cadastrado ainda?
+                  <a
+                    href="#!"
+                  >
+                     Cadastre-se aqui!
+                  </a>
+                </p>
+                <button
+                  class="ui positive button"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+              </form>
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <form
+                className="ui form"
+                onSubmit={[Function]}
+              >
+                <div
+                  className="field"
+                >
+                  <label>
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    onChange={[Function]}
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="field"
+                >
+                  <label>
+                    Password
+                  </label>
+                  <input
+                    id="password"
+                    onChange={[Function]}
+                    placeholder="Password"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <p
+                  id="register"
+                >
+                  Você não está cadastrado ainda?
+                  <a
+                    href="#!"
+                    onClick={[Function]}
+                  >
+                     Cadastre-se aqui!
+                  </a>
+                </p>
+                <button
+                  className="ui positive button"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+              </form>,
+              "className": "column responsive",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <form
+                  class="ui form"
+                >
+                  <div
+                    class="field"
+                  >
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      placeholder="Email"
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    class="field"
+                  >
+                    <label>
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      placeholder="Password"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    id="register"
+                  >
+                    Você não está cadastrado ainda?
+                    <a
+                      href="#!"
+                    >
+                       Cadastre-se aqui!
+                    </a>
+                  </p>
+                  <button
+                    class="ui positive button"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>
+                </form>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="field"
+                    >
+                      <label>
+                        Email
+                      </label>
+                      <input
+                        id="email"
+                        onChange={[Function]}
+                        placeholder="Email"
+                        type="email"
+                        value=""
+                      />
+                    </div>,
+                    <div
+                      className="field"
+                    >
+                      <label>
+                        Password
+                      </label>
+                      <input
+                        id="password"
+                        onChange={[Function]}
+                        placeholder="Password"
+                        type="text"
+                        value=""
+                      />
+                    </div>,
+                    Array [],
+                    <p
+                      id="register"
+                    >
+                      Você não está cadastrado ainda?
+                      <a
+                        href="#!"
+                        onClick={[Function]}
+                      >
+                         Cadastre-se aqui!
+                      </a>
+                    </p>,
+                    <button
+                      className="ui positive button"
+                      type="submit"
+                    >
+                      Sign in
+                    </button>,
+                  ],
+                  "className": "ui form",
+                  "onSubmit": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <div
+                      class="field"
+                    >
+                      <label>
+                        Email
+                      </label>
+                      <input
+                        id="email"
+                        placeholder="Email"
+                        type="email"
+                        value=""
+                      />
+                    </div>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <label>
+                          Email
+                        </label>,
+                        <input
+                          id="email"
+                          onChange={[Function]}
+                          placeholder="Email"
+                          type="email"
+                          value=""
+                        />,
+                      ],
+                      "className": "field",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <label>
+                          Email
+                        </label>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Email",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Email",
+                        ],
+                        "type": "label",
+                      },
+                      Object {
+                        "instance": <input
+                          id="email"
+                          placeholder="Email"
+                          type="email"
+                          value=""
+                        />,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "id": "email",
+                          "onChange": [Function],
+                          "placeholder": "Email",
+                          "type": "email",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                        ],
+                        "type": "input",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": <div
+                      class="field"
+                    >
+                      <label>
+                        Password
+                      </label>
+                      <input
+                        id="password"
+                        placeholder="Password"
+                        type="text"
+                        value=""
+                      />
+                    </div>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <label>
+                          Password
+                        </label>,
+                        <input
+                          id="password"
+                          onChange={[Function]}
+                          placeholder="Password"
+                          type="text"
+                          value=""
+                        />,
+                      ],
+                      "className": "field",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <label>
+                          Password
+                        </label>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Password",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Password",
+                        ],
+                        "type": "label",
+                      },
+                      Object {
+                        "instance": <input
+                          id="password"
+                          placeholder="Password"
+                          type="text"
+                          value=""
+                        />,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "id": "password",
+                          "onChange": [Function],
+                          "placeholder": "Password",
+                          "type": "text",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                        ],
+                        "type": "input",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  null,
+                  Object {
+                    "instance": <p
+                      id="register"
+                    >
+                      Você não está cadastrado ainda?
+                      <a
+                        href="#!"
+                      >
+                         Cadastre-se aqui!
+                      </a>
+                    </p>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Você não está cadastrado ainda?",
+                        <a
+                          href="#!"
+                          onClick={[Function]}
+                        >
+                           Cadastre-se aqui!
+                        </a>,
+                      ],
+                      "id": "register",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Você não está cadastrado ainda?",
+                      Object {
+                        "instance": <a
+                          href="#!"
+                        >
+                           Cadastre-se aqui!
+                        </a>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": " Cadastre-se aqui!",
+                          "href": "#!",
+                          "onClick": [Function],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          " Cadastre-se aqui!",
+                        ],
+                        "type": "a",
+                      },
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": <button
+                      class="ui positive button"
+                      type="submit"
+                    >
+                      Sign in
+                    </button>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Sign in",
+                      "className": "ui positive button",
+                      "type": "submit",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Sign in",
+                    ],
+                    "type": "button",
+                  },
+                ],
+                "type": "form",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

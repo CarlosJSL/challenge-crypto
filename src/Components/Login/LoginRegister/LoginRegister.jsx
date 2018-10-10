@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {getAllDataOnDB,putValueOnDB} from '../../../connectDatabase';
+import {getAllDataOnDB,putValueOnDB} from '../../../utils/connectDatabase';
 import LoginForm from '../LoginForm/LoginForm';
 import md5 from 'md5';
 
@@ -78,7 +78,7 @@ export default class LoginRegister extends Component {
 
 
     render() {
-        if(!this.state.showLoginForm){
+        if (!this.state.showLoginForm){
             return (
                 <div className="ui four column centered grid">
                     <div className="column responsive">
@@ -110,7 +110,7 @@ export default class LoginRegister extends Component {
                     </div>
                 </div>
             )
-        } else{
+        } else {
             return (
                 <LoginForm />
             )

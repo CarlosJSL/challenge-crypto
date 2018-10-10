@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './DashboardContent.css';
-import { getUserAmount } from '../../../connectDatabase';
+import { getUserAmount } from '../../../utils/connectDatabase';
 
 export default class DashboardContent extends Component{
 

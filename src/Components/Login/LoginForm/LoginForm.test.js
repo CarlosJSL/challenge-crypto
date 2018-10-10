@@ -1,13 +1,13 @@
 import React from 'react';
 import LoginForm from './LoginForm';
-import Enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import { mount } from 'enzyme';
 import indexedDB from 'fake-indexeddb';
-import { chargeDB } from '../../../connectDatabase';
+import { chargeDB } from '../../../utils/connectDatabase';
 
-Enzyme.configure({ adapter: new Adapter() })
-window.indexedDB =  indexedDB
+Enzyme.configure({ adapter: new Adapter() });
+window.indexedDB =  indexedDB;
 
 beforeEach(() =>{
     window.localStorage.clear();
@@ -123,5 +123,12 @@ describe('doLogin method', () => {
         
         expect(JSON.parse(window.localStorage.getItem("user"))).toBeNull();
         expect(instance.state.errors).toEqual(['Usuário ou senha inválidos']);
+    })
+})
+
+describe('Login Component', () => {
+    test('should render', () => {
+      const wrapper = mount(<LoginForm/> );
+      expect(wrapper).toMatchSnapshot();
     })
 })

@@ -3,7 +3,7 @@ import DashboardContent from './DashboardContent';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { mount } from 'enzyme';
-import { putValueOnDB, getUserTransactions, chargeDB } from '../../../connectDatabase';
+import { chargeDB } from '../../../utils/connectDatabase';
 import indexedDB from 'fake-indexeddb';
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -43,5 +43,12 @@ describe('componentDidMount method', () => {
         expect(instance.state.userCryptoAmount.real_value).toEqual(user.wallet.real_value);
         expect(instance.state.userCryptoAmount.bitcoin_value).toEqual(user.wallet.bitcoin_value);
         expect(instance.state.userCryptoAmount.brita_value).toEqual(user.wallet.brita_value);
+    })
+})
+
+describe('DashboardContent Component', () => {
+    test('should render', () => {
+      const wrapper = mount(<DashboardContent userCryptoAmount = {{real_value:10000,bitcoin_value:0,brita_value:0}}/> );
+      expect(wrapper).toMatchSnapshot();
     })
 })

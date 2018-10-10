@@ -4,7 +4,7 @@ import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { mount } from 'enzyme';
 import indexedDB from 'fake-indexeddb';
-import { chargeDB } from '../../../connectDatabase';
+import { chargeDB } from '../../../utils/connectDatabase';
 
 Enzyme.configure({ adapter: new Adapter() });
 window.indexedDB =  indexedDB;
@@ -112,3 +112,11 @@ describe('doRegister method', () => {
         
     })
 })
+
+describe('LoginRegister Component', () => {
+    test('should render', () => {
+      const wrapper = mount(<LoginRegister/> );
+      expect(wrapper).toMatchSnapshot();
+    })
+})
+  

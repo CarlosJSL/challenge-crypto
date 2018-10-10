@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './DashboardCards.css';
 import { getBitcoinPrice , getBritaPrice } from '../../../utils/cryptoAPI';
-import { getUserAmount, putValueOnDB, getUserInfo } from '../../../connectDatabase';
+import { getUserAmount, putValueOnDB, getUserInfo } from '../../../utils/connectDatabase';
 import moment from 'moment';
 
 export default class DashboardCards extends Component {

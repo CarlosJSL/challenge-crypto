@@ -21,7 +21,7 @@ export default class DashboardHeader extends Component {
                         <i className="sign-out icon"></i>
                     </a>
                     <a href="#!" className="item">
-                        Bem vindo, {JSON.parse(window.localStorage.getItem('user')).name||''}!
+                        Bem vindo, { JSON.parse(window.localStorage.getItem('user')).name || 'Anonimo' }!
                     </a>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './LoginForm.css';
-import { getAllDataOnDB } from '../../../connectDatabase';
+import { getAllDataOnDB } from '../../../utils/connectDatabase';
 import LoginRegister from '../LoginRegister/LoginRegister';
 
 export default class LoginForm extends Component {

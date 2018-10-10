@@ -3,7 +3,7 @@ import DashboardCards from './DashboardCards';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { mount } from 'enzyme';
-import { getUserTransactions, chargeDB } from '../../../connectDatabase';
+import { getUserTransactions, chargeDB } from '../../../utils/connectDatabase';
 import indexedDB from 'fake-indexeddb';
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -259,5 +259,12 @@ describe('makeTransaction method',() => {
 
         const transactions = await getUserTransactions('transactions');
         expect(transactions[1].wallet.hash).toEqual(user.wallet.hash);
+    })
+})
+
+describe('DashboardCards Component', () => {
+    test('should render', () => {
+      const wrapper = mount(<DashboardCards userCryptoAmount = {{real_value:10000,bitcoin_value:0,brita_value:0}}/> );
+      expect(wrapper).toMatchSnapshot();
     })
 })

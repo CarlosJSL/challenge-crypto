@@ -4,7 +4,7 @@ import './App.css';
 import Login from './Components/Login/Login';
 import Dashboard from './Components/Dashboard/Dashboard';
 import {PrivateRoute} from './utils/authAPI';
-import {chargeDB} from './connectDatabase';
+import {chargeDB} from './utils/connectDatabase';
 
 
 class App extends Component {
