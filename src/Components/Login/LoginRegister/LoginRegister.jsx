@@ -22,6 +22,11 @@ export default class LoginRegister extends Component {
         this.setState({...this.state,[event.target.id]: event.target.value});
     }
 
+    handleSubmit(event){
+        event.preventDefault();
+        this.signUp();
+    }
+
     validateForm() {
         const errors = [];
         // eslint-disable-next-line
@@ -57,10 +62,10 @@ export default class LoginRegister extends Component {
                     this.setState({...this.state, errors: ['Usuário já está cadastrado']});
 
                 } else {
-                    newUser.wallet = { hash: md5(newUser.email), real_value: 100000, bitcoin_value:0 , brita_value: 0 };
+                    newUser.wallet = { hash: md5(newUser.email), real_value: "100000.00", bitcoin_value: "0.00000000", brita_value: "0.00" };
                     await putValueOnDB(newUser,newUser.email,"user");
+
                     window.localStorage.setItem("user", JSON.stringify(newUser));
-                    
                     this.props.router.history.push('/dashboard');
                 }
             } else {
@@ -70,12 +75,6 @@ export default class LoginRegister extends Component {
             console.log(error);
         }
     }
-
-    handleSubmit(event){
-        event.preventDefault();
-        this.signUp();
-    }
-
 
     render() {
         if (!this.state.showLoginForm){
@@ -98,12 +97,12 @@ export default class LoginRegister extends Component {
                                 {
                                     this.state.errors.map((error,index) => {
                                         return(
-                                            <p style={{color:"red"}} key={index}>{error}</p>
+                                            <p className="error" key={index}>{error}</p>
                                         )
                                     })
                                 }
-                                <p id="register">Are you registered ? 
-                                    <a href = '#!' onClick={()=> this.setState({showLoginForm: true})}> Sign in here</a>
+                                <p id="register">Você já está registrado ? 
+                                    <a href = '#!' onClick={()=> this.setState({showLoginForm: true})}> Faça o login aqui</a>
                                 </p>
                             <button className="ui positive button" type="submit">Sign up</button>
                         </form>

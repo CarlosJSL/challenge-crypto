@@ -25,7 +25,11 @@ export default class DashboardCards extends Component {
     }
 
     async componentDidMount(){
-        this.setState({...this.state, cryptos: [ await getBitcoinPrice(), await getBritaPrice(Date())], userCryptoAmounts: await getUserAmount('user')});
+        this.setState({
+                        ...this.state, 
+                        cryptos: [ await getBitcoinPrice(), await getBritaPrice(Date())], 
+                        userCryptoAmounts: await getUserAmount('user')
+                     });
     }
 
     showModal(crypto, condition){

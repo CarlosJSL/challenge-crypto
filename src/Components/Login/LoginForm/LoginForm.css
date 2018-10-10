@@ -73,4 +73,9 @@ a {
         width: 27% !important;
         padding-left: 0.3rem !important;
     }
-}   
+}
+
+.error{
+    color:red;
+    text-align:center
+}

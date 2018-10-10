@@ -22,7 +22,10 @@ export default class Dashboard extends Component {
         
     }
     async getUserCryptoAmount(){
-        this.setState({userCryptoAmount: await getUserAmount('user'), userTransactions: await getUserTransactions("transactions")});
+        this.setState({
+                        userCryptoAmount: await getUserAmount('user'), 
+                        userTransactions: await getUserTransactions("transactions")
+                    });
     }
     
     render() {

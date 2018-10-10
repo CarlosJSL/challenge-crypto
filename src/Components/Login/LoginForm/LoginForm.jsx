@@ -88,7 +88,7 @@ export default class LoginForm extends Component {
                                 {
                                     this.state.errors.map((error,index) => {
                                         return(
-                                            <p style={{color:"red"}} key={index}>{error}</p>
+                                            <p className= "error" key={index}>{error}</p>
                                         )
                                     })
                                 }
