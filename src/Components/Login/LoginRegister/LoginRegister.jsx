@@ -102,7 +102,7 @@ export default class LoginRegister extends Component {
                                     })
                                 }
                                 <p id="register">Você já está registrado ? 
-                                    <a href = '#!' onClick={()=> this.setState({showLoginForm: true})}> Faça o login aqui</a>
+                                    <a href = 'javascript:void(0)' onClick={()=> this.setState({showLoginForm: true})}> Faça o login aqui</a>
                                 </p>
                             <button className="ui positive button" type="submit">Sign up</button>
                         </form>
@@ -111,7 +111,7 @@ export default class LoginRegister extends Component {
             )
         } else {
             return (
-                <LoginForm />
+                <LoginForm router = {this.props.router}/>
             )
         }
     }

@@ -13,14 +13,14 @@ export default class DashboardHeader extends Component {
         return (
             <div className = "ui fixed inverted menu">
                 <div className = "ui container">
-                    <a href="#!" className="header item"> 
+                    <a href="#" className="header item"> 
                         <img  alt='stone' src={stoneSvg}>
                         </img>
                     </a>
                     <a href = '#!' onClick = {() => this.logout()} className="item">
                         <i className="sign-out icon"></i>
                     </a>
-                    <a href="#!" className="item">
+                    <a href="#" className="item">
                         Bem vindo, { JSON.parse(window.localStorage.getItem('user')).name || 'Anonimo' }!
                     </a>
                 </div>

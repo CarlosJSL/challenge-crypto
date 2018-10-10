@@ -93,7 +93,7 @@ export default class LoginForm extends Component {
                                     })
                                 }
                                 <p id="register">Você não está cadastrado ainda? 
-                                    <a href = '#!' onClick={()=> this.setState({showRegisterForm: true})}> Cadastre-se aqui!</a>
+                                    <a href = 'javascript:void(0)' onClick={()=> this.setState({showRegisterForm: true})}> Cadastre-se aqui!</a>
                                 </p>
                             <button className="ui positive button" type="submit">Sign in</button>
                         </form>
