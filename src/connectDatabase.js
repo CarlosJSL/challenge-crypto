@@ -1,5 +1,6 @@
 
 export function connect(name, version) {
+    let indexedDB = window.indexedDB;
     return new Promise((resolve, reject) => {
       const request = indexedDB.open(name, version);
       request.onupgradeneeded = () => {
@@ -33,7 +34,7 @@ export async function getUserTransactions(storage) {
     let conn;
     try {
       conn = await connect('stone-crypto',1);
-      const transactions = await getAllData(conn, storage)
+      const transactions = await getAllData(conn, storage);
       return transactions.filter(transaction => transaction.wallet.hash === JSON.parse(window.localStorage.getItem('user')).wallet.hash)
     } catch(exception) {
       console.error(exception);
@@ -121,15 +122,13 @@ export async function getAllDataOnDB(storage) {
 export async function chargeDB () {
     try {
         const result = await getAllDataOnDB("user")
-
+        
         if(result.length === 0){
             await putValueOnDB(
                 { 
                     name:"Carlos José", 
                     email:"carlos@gmail.com", 
-                    password:"123", 
-                    cpf:"07469212418", 
-                    data_nascimento:"24/12/1995", 
+                    password:"123456",  
                     wallet:{ 
                         hash: 'djcv98234y', 
                         real_value: 100000.00, 
