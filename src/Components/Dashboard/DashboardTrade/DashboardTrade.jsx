@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import './DashboardTrade.css'
+import React, { Component } from 'react';
+import './DashboardTrade.css';
 
-import DashboardCards from './DashboardCards'
-import DashboardTransactions from './DashboardTransactions'
+import DashboardCards from './DashboardCards';
+import DashboardTransactions from './DashboardTransactions';
 
 
 export default class DashBoardTrade extends Component {

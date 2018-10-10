@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import './DashboardContent.css'
-import { getUserAmount } from '../../../connectDatabase'
+import React, { Component } from 'react';
+import './DashboardContent.css';
+import { getUserAmount } from '../../../connectDatabase';
 
 export default class DashboardContent extends Component{
 
@@ -8,11 +8,11 @@ export default class DashboardContent extends Component{
         super(props)
         this.state ={
             userCryptoAmount:''
-        }
+        };
     }
 
     async componentDidMount(){
-        this.setState({...this.state, userCryptoAmount: await getUserAmount('user')})
+        this.setState({...this.state, userCryptoAmount: await getUserAmount('user')});
     }
 
     render () {

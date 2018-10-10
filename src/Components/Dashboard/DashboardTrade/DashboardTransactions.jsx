@@ -1,7 +1,5 @@
 import React from 'react';
-
 import './DashboardTransactions.css';
-
 
 export default (props) => (
     <table className="ui very basic collapsing celled table">
