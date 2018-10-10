@@ -22,7 +22,6 @@ export default class DashboardCards extends Component {
 
         this.changeAmount = this.changeAmount.bind(this) ;
         this.changeAmountSell = this.changeAmountSell.bind(this);
-       
     }
 
     async componentDidMount(){
@@ -44,9 +43,21 @@ export default class DashboardCards extends Component {
         const totalPrice = cryptoQuantity * this.state.cryptoFocus.buy;
 
         if (totalPrice > this.state.userCryptoAmounts.real_value ) {
-            this.setState({...this.state, real_amount: totalPrice, error: 'Você não tem dinheiro suficiente para essa compra', enableButton:'ui teal labeled icon disabled button', quantity:cryptoQuantity });
+            this.setState({
+                            ...this.state, 
+                            real_amount: Number(totalPrice).toFixed(2), 
+                            error: 'Você não tem dinheiro suficiente para essa compra', 
+                            enableButton:'ui teal labeled icon disabled button', 
+                            quantity:cryptoQuantity   
+                          });
         } else { 
-            this.setState({...this.state, real_amount: totalPrice, error: '', enableButton:'ui teal labeled icon button', quantity: cryptoQuantity});
+            this.setState({
+                            ...this.state, 
+                            real_amount: Number(totalPrice).toFixed(2), 
+                            error: '', 
+                            enableButton:'ui teal labeled icon button', 
+                            quantity: cryptoQuantity
+                        });
         }
         
     }
@@ -56,15 +67,28 @@ export default class DashboardCards extends Component {
         const totalPrice = cryptoQuantity * this.state.cryptoFocus.sell;
         
         if (cryptoQuantity > this.state.userCryptoAmounts[`${this.state.cryptoFocus.name}_value`] ) {
-            this.setState({...this.state, crypto_amount: totalPrice, error: 'Você não tem dinheiro suficiente para essa venda', enableButton:'ui teal labeled icon disabled button', quantity:cryptoQuantity });
+            this.setState({
+                            ...this.state, 
+                            crypto_amount: Number(totalPrice).toFixed(2), 
+                            error: 'Você não tem dinheiro suficiente para essa venda', 
+                            enableButton:'ui teal labeled icon disabled button', 
+                            quantity:cryptoQuantity 
+                        });
         } else { 
-            this.setState({...this.state, crypto_amount: totalPrice, error: '', enableButton:'ui teal labeled icon button', quantity: cryptoQuantity});
+            this.setState({
+                            ...this.state, 
+                            crypto_amount: Number(totalPrice).toFixed(2), 
+                            error: '', 
+                            enableButton:'ui teal labeled icon button', 
+                            quantity: cryptoQuantity
+                        });
         }
     }
 
     async makeTransaction(condition) {
         try {
             const user = await getUserInfo("user");
+            let formatDecimals = 0;
             const transaction = {
                 wallet: this.state.userCryptoAmounts,
                 buy:{
@@ -78,24 +102,36 @@ export default class DashboardCards extends Component {
                 date: moment(Date()).format('DD/MM/YYYY')
             };
 
+            
             if (condition === "sell") {
                 transaction.buy.crypto = "Reais";
                 transaction.buy.totalValue = this.state.crypto_amount;
                 transaction.sell.crypto = this.state.cryptoFocus.name;
                 transaction.sell.totalValue = parseFloat(this.state.quantity);
 
-                user.wallet.real_value = +(parseFloat(user.wallet.real_value) + parseFloat(transaction.buy.totalValue)).toFixed(2) ;
-                user.wallet[`${this.state.cryptoFocus.name}_value`] = parseFloat(user.wallet[`${this.state.cryptoFocus.name.toLowerCase()}_value`]) - parseFloat(transaction.sell.totalValue);
+                user.wallet.real_value = Number(Number(user.wallet.real_value) + Number(transaction.buy.totalValue)).toFixed(2) ;
+                `${this.state.cryptoFocus.name}_value` === 'bitcoin_value'? formatDecimals = 8 : formatDecimals = 2;
+
+                user.wallet[`${this.state.cryptoFocus.name}_value`] = 
+                Number(Number(user.wallet[`${this.state.cryptoFocus.name}_value`]) -  Number(transaction.sell.totalValue)).toFixed(formatDecimals);
+
             } else {
-                user.wallet.real_value = +(parseFloat(user.wallet.real_value) - parseFloat(transaction.sell.totalValue)).toFixed(2) ;
-                user.wallet[`${this.state.cryptoFocus.name}_value`] = parseFloat(user.wallet[`${this.state.cryptoFocus.name.toLowerCase()}_value`]) + parseFloat(transaction.buy.totalValue);
-                
+                user.wallet.real_value = Number(Number(user.wallet.real_value) - Number(transaction.sell.totalValue)).toFixed(2);
+                `${this.state.cryptoFocus.name}_value` === 'bitcoin_value'? formatDecimals = 8 : formatDecimals = 2;
+
+                user.wallet[`${this.state.cryptoFocus.name}_value`] =   
+                Number(Number(user.wallet[`${this.state.cryptoFocus.name}_value`]) + Number(transaction.buy.totalValue)).toFixed(formatDecimals);
             }
             
             await putValueOnDB(transaction, transaction.wallet.hash,"transactions");
             await putValueOnDB(user,user.email,"user");
 
-            this.setState({...this.state, cryptos: [ await getBitcoinPrice(), await getBritaPrice(Date())], userCryptoAmounts: await getUserAmount('user')});
+            this.setState({
+                            ...this.state, 
+                            cryptos: [ await getBitcoinPrice(), await getBritaPrice(Date())], 
+                            userCryptoAmounts: await getUserAmount('user')
+                        });
+
             window.$('.ui.modal').modal('hide');
             this.props.getUserCryptoAmount();
 

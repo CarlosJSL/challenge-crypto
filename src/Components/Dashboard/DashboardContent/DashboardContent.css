@@ -9,6 +9,3 @@
 .ui.statistics>.statistic {
     flex-direction: row-reverse;
 }
-
-.ui.fixed.menu+.ui.grid {
-}

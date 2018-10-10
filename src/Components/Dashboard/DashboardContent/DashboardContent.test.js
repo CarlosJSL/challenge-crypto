@@ -18,9 +18,9 @@ describe('componentDidMount method', () => {
             password:"123456",  
             wallet:{ 
                 hash: 'djcv98234y', 
-                real_value: 100000.00, 
-                bitcoin_value: 0 , 
-                brita_value: 0 
+                real_value: "100000.00", 
+                bitcoin_value: "0.00000000" , 
+                brita_value: "0.00"
             }
         };
         window.localStorage.setItem('user', JSON.stringify(user));
@@ -29,9 +29,9 @@ describe('componentDidMount method', () => {
 
         const props = {
               userCryptoAmount: {
-                  real_value: 100000,
-                  bitcoin_value: 0,
-                  brita_value: 0
+                real_value: "100000.00", 
+                bitcoin_value: "0.00000000" , 
+                brita_value: "0.00"
               }
         };
 

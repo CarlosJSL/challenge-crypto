@@ -20,9 +20,9 @@ describe('componentDidMount method', () => {
             password:"123456",  
             wallet:{ 
                 hash: 'djcv98234y', 
-                real_value: 100000.00, 
-                bitcoin_value: 0 , 
-                brita_value: 0 
+                real_value: "100000.00", 
+                bitcoin_value: "0.00000000" , 
+                brita_value: "0.00" 
             }
         }
         window.localStorage.setItem('user', JSON.stringify(user));
@@ -36,8 +36,8 @@ describe('componentDidMount method', () => {
         expect(instance.state.cryptos[0].symbol).toEqual('฿');
 
         expect(instance.state.cryptos[1].name).toEqual('brita');
-        expect(typeof instance.state.cryptos[1].buy).toEqual('number');
-        expect(typeof instance.state.cryptos[1].sell).toEqual('number');
+        expect(typeof instance.state.cryptos[1].buy).toEqual('string');
+        expect(typeof instance.state.cryptos[1].sell).toEqual('string');
         expect(instance.state.cryptos[1].symbol).toEqual('$');
 
         expect(instance.state.userCryptoAmounts.hash).toEqual(user.wallet.hash);
@@ -59,9 +59,9 @@ describe('changeAmount method',() => {
             password:"123456",  
             wallet:{ 
                 hash: 'djcv98234y', 
-                real_value: 100000.00, 
-                bitcoin_value: 0 , 
-                brita_value: 0 
+                "real_value":"100000.00",
+                "bitcoin_value":"0.00000000",
+                "brita_value":  "0.00"
             }
         };
 
@@ -95,9 +95,9 @@ describe('changeAmount method',() => {
             password:"123456",  
             wallet:{ 
                 hash: 'djcv98234y', 
-                real_value: 100000.00, 
-                bitcoin_value: 0 , 
-                brita_value: 0 
+                real_value:"100000.00",
+                bitcoin_value:"0.00000000",
+                brita_value:  "0.00"
             }
         }
         const event = {
@@ -134,9 +134,9 @@ describe('changeAmountSell method',() => {
             password:"123456",  
             wallet:{ 
                 hash: 'djcv98234y', 
-                real_value: 100000.00, 
-                bitcoin_value: 0 , 
-                brita_value: 0 
+                real_value:"100000.00",
+                bitcoin_value:"0.00000000",
+                brita_value:  "0.00"
             }
         };
         
@@ -172,9 +172,9 @@ describe('changeAmountSell method',() => {
             password:"123456",  
             wallet:{ 
                 hash: 'djcv98234y', 
-                real_value: 100000.00, 
-                bitcoin_value: 0 , 
-                brita_value: 0 
+                real_value:"100000.00",
+                bitcoin_value:"0.00000000",
+                brita_value:  "0.00"
             }
         };
         
@@ -211,9 +211,9 @@ describe('makeTransaction method',() => {
             password:"123456",  
             wallet:{ 
                 hash: 'djcv98234y', 
-                real_value: 100000.00, 
-                bitcoin_value: 0 , 
-                brita_value: 0 
+                real_value:"100000.00",
+                bitcoin_value:"0.00000000",
+                brita_value:  "0.00" 
             }
         };
 
@@ -241,9 +241,9 @@ describe('makeTransaction method',() => {
             password:"123456",  
             wallet:{ 
                 hash: 'djcv98234y', 
-                real_value: 100000.00, 
-                bitcoin_value: 0 , 
-                brita_value: 0 
+                real_value:"100000.00",
+                bitcoin_value:"0.00000000",
+                brita_value:  "0.00"
             }
         };
 

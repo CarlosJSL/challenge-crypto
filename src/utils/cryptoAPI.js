@@ -1,8 +1,8 @@
 import moment from 'moment'
 import axios from 'axios'
 
-import BitcoinLogo from '../images/bitcoin.png'
-import BritaLogo from '../images/brita.png'
+import BitcoinLogo from '../images/bitcoin.jpg'
+import BritaLogo from '../images/brita2.jpg'
 
 const bitcoinURL = 'https://www.mercadobitcoin.net/api/BTC/ticker/'
 const britaURL = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)'
@@ -10,7 +10,6 @@ const britaURL = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/
 export const getBitcoinPrice = async () => {
     try {
         const result = await axios(bitcoinURL)
-        
         return {
             name: 'bitcoin',
             buy: result.data.ticker.buy,
@@ -44,8 +43,8 @@ export const getBritaPrice = async (date) => {
         
         return { 
             name: 'brita',
-            buy: result.data.value.pop().cotacaoCompra, 
-            sell: result.data.value.pop().cotacaoVenda,
+            buy: Number(result.data.value.pop().cotacaoCompra).toFixed(2), 
+            sell: Number(result.data.value.pop().cotacaoVenda).toFixed(2),
             date: moment(result.data.value.pop().dataHoraCotacao).format('MM/DD/YYYY'),
             logo: BritaLogo,
             symbol: "$"
