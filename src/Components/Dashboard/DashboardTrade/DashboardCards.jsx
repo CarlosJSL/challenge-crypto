@@ -40,7 +40,6 @@ export default class DashboardCards extends Component {
     }
 
     changeAmount(event) {
-        
         const cryptoQuantity = event.target.value;
         const totalPrice = cryptoQuantity * this.state.cryptoFocus.buy
 
