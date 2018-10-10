@@ -24,6 +24,12 @@ a {
     padding-right: 3rem;
 }
 
+.error {
+    color:red;
+    text-align:center
+}
+
+
 @media only screen and (max-width: 600px) {
     .login-main {
         height: 117vh;
@@ -75,7 +81,3 @@ a {
     }
 }
 
-.error{
-    color:red;
-    text-align:center
-}

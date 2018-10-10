@@ -83,7 +83,7 @@ describe('doLogin method', () => {
 })
 
 describe('doLogin method', () => {
-    test('Should do login', async () => {
+    test('Should login', async () => {
         const wrapper = mount(<LoginForm/>);
         const instance = wrapper.instance();
 
@@ -112,7 +112,7 @@ describe('doLogin method', () => {
 })
 
 describe('doLogin method', () => {
-    test('Should not to do login because the user is not registered', async () => {
+    test('Should not login because the user is not registered', async () => {
 
         const wrapper = mount(<LoginForm />);
         const instance = wrapper.instance();
@@ -125,6 +125,49 @@ describe('doLogin method', () => {
         expect(instance.state.errors).toEqual(['Usuário ou senha inválidos']);
     })
 })
+
+describe('doRegister method', () => {
+    test('Should not register because the data form is invalid', () => {
+        const wrapper = mount(<LoginForm/>);
+        const instance = wrapper.instance();
+        instance.setState({name:'carlos',email:'teste',password:'teste'});
+
+        expect(instance.validateForm().lenght).not.toBe(0);
+    })
+})
+
+
+describe('doRegister method', () => {
+    test('Should  not register because the user already registered', async () => {
+        const wrapper = mount(<LoginForm/>);
+        const instance = wrapper.instance();
+        await chargeDB();
+        
+        instance.setState({name:'carlos jose',email:'carlos@gmail.com',password:'123456'});
+        
+        await instance.signUp();
+        
+        expect(instance.state.errors).toEqual(['Usuário já está cadastrado']);
+        
+    })
+})
+
+describe('doRegister method', () => {
+    test('Should register', async () => {
+        const wrapper = mount(<LoginForm/>);
+        const instance = wrapper.instance();
+
+        instance.setState({name:'carlos jose',email:'teste@gmail.com',password:'123456'});
+        await instance.signUp();
+        
+        expect(JSON.parse(window.localStorage.getItem("user")).name).toEqual(instance.state.name);
+        expect(JSON.parse(window.localStorage.getItem("user")).email).toEqual(instance.state.email);
+        expect(JSON.parse(window.localStorage.getItem("user")).password).toEqual(instance.state.password);
+        expect(JSON.parse(window.localStorage.getItem("user")).wallet.real_value).toEqual(100000);
+        
+    })
+})
+
 
 describe('Login Component', () => {
     test('should render', () => {
