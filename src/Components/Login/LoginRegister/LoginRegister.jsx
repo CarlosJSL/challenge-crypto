@@ -8,9 +8,9 @@ export default class LoginRegister extends Component {
         super(props);
         
         this.state = {
-          name:"",
-          email: "",
-          password: "",
+          name:'',
+          email: '',
+          password: '',
           showLoginForm:  false,
           errors: []
         };
@@ -24,16 +24,20 @@ export default class LoginRegister extends Component {
 
     validateForm() {
         const errors = [];
-        if (this.state.email.length < 5) {
-          errors.push("Email should be at least 5 charcters long");
+        const emailPattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        
+        if (!this.state.password.length || !this.state.email.length || !this.state.name.length ) {
+            errors.push("Os campos não podem estar vazios");
+            return errors;
+        }   
+
+        if (!emailPattern.test(String(this.state.email).toLowerCase())) {    
+            errors.push("O email está em formato inválido");
         }
-        if (this.state.email.split('').filter(x => x === '@').length !== 1) {
-          errors.push("Email should contain a @");
+
+        if (this.state.password.length < 6) {    
+            errors.push("A senha precisa conter no minimo 6 digitos");
         }
-        if (this.state.email.indexOf('.') === -1) {
-          errors.push("Email should contain at least one dot");
-        }
-      
         return errors;
     }
 
@@ -41,30 +45,28 @@ export default class LoginRegister extends Component {
         try {
             const newUser = {
                 ...this.state
-            } 
+            };
 
-            delete newUser['errors']
-            delete newUser['showLoginForm']
+            delete newUser['errors'];
+            delete newUser['showLoginForm'];
             
             if (!this.validateForm().length) {
                 const users = await getAllDataOnDB("user"); 
-
-                if(users.find(user => user.email === newUser.email)){
-                    this.setState({...this.state, errors: ['User already registered']});
+                if(users.find(user => user.email === newUser.email)) {
+                    this.setState({...this.state, errors: ['Usuário já está cadastrado']});
 
                 } else {
                     newUser.wallet = { hash: md5(newUser.email), real_value: 100000, bitcoin_value:0 , brita_value: 0 };
-                    await putValueOnDB(newUser,newUser.email,"user")
-                    window.localStorage.setItem("user", JSON.stringify(newUser))
+                    await putValueOnDB(newUser,newUser.email,"user");
+                    window.localStorage.setItem("user", JSON.stringify(newUser));
                     
-                    this.props.router.history.push('/dashboard')
+                    this.props.router.history.push('/dashboard');
                 }
             } else {
                 this.setState({...this.state, errors: this.validateForm()});
             }            
         } catch (error) {
-            console.log(this.props)
-            console.log(error)
+            console.log(error);
         }
     }
 

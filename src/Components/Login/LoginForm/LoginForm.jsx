@@ -8,8 +8,8 @@ export default class LoginForm extends Component {
         super(props);
         
         this.state = {
-          email: "",
-          password: "",
+          email: '',
+          password: '',
           showRegisterForm:  false,
           errors: []
         };
@@ -23,21 +23,26 @@ export default class LoginForm extends Component {
 
     validateForm() {
         const errors = [];
-        if (this.state.email.length < 5) {
-          errors.push("Email should be at least 5 charcters long");
+        const emailPattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        
+        if (!this.state.password.length || !this.state.email.length ) {
+            errors.push("Os campos não podem estar vazios");
+            return errors;
+        }   
+
+        if (!emailPattern.test(String(this.state.email).toLowerCase())) {    
+            errors.push("O email está em formato inválido");
         }
-        if (this.state.email.split('').filter(x => x === '@').length !== 1) {
-          errors.push("Email should contain a @");
+
+        if (this.state.password.length < 6) {    
+            errors.push("A senha precisa conter no minimo 6 digitos");
         }
-        if (this.state.email.indexOf('.') === -1) {
-          errors.push("Email should contain at least one dot");
-        }
-      
+
         return errors;
     }
     async doLogin()   {
         try {
-
+            
             if(!this.validateForm().length){
                 const { email , password } = this.state;
                 const users = await getAllDataOnDB("user");  
@@ -45,10 +50,9 @@ export default class LoginForm extends Component {
 
                 if (user.length) {
                     window.localStorage.setItem("user", JSON.stringify(user[0]))
-                    
                     this.props.router.history.push('/dashboard') 
                  } else { 
-                    this.setState({...this.state, errors: ['User is not registered']});
+                    this.setState({...this.state, errors: ['Usuário ou senha inválidos']});
                  } 
 
             } else {
@@ -86,8 +90,8 @@ export default class LoginForm extends Component {
                                         )
                                     })
                                 }
-                                <p id="register">Are you not registered yet? 
-                                    <a onClick={()=> this.setState({showRegisterForm: true})}> Sign up here</a>
+                                <p id="register">Você não está cadastrado ainda? 
+                                    <a onClick={()=> this.setState({showRegisterForm: true})}> Cadastre-se aqui!</a>
                                 </p>
                             <button className="ui positive button" type="submit">Sign in</button>
                         </form>
