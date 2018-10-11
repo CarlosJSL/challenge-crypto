@@ -42,50 +42,73 @@ export default class DashboardCards extends Component {
         }
     }
 
+    isNegative(cryptoQuantity) {
+        return cryptoQuantity < 0;
+    }
+    
     changeAmount(event) {
         const cryptoQuantity = event.target.value;
         const totalPrice = cryptoQuantity * this.state.cryptoFocus.buy;
 
-        if (totalPrice > this.state.userCryptoAmounts.real_value ) {
+        if(!this.isNegative(cryptoQuantity)) {
+            if (totalPrice > this.state.userCryptoAmounts.real_value ) {
+                this.setState({
+                                ...this.state, 
+                                real_amount: Number(totalPrice).toFixed(2), 
+                                error: 'Você não tem dinheiro suficiente para essa compra', 
+                                enableButton:'ui teal labeled icon disabled button', 
+                                quantity:cryptoQuantity   
+                                });
+            } else { 
+                this.setState({
+                                ...this.state, 
+                                real_amount: Number(totalPrice).toFixed(2), 
+                                error: '', 
+                                enableButton:'ui teal labeled icon button', 
+                                quantity: cryptoQuantity
+                            });
+            }
+        } else {
             this.setState({
                             ...this.state, 
                             real_amount: Number(totalPrice).toFixed(2), 
-                            error: 'Você não tem dinheiro suficiente para essa compra', 
+                            error: 'Valores negativos não são permitidos', 
                             enableButton:'ui teal labeled icon disabled button', 
                             quantity:cryptoQuantity   
-                          });
-        } else { 
-            this.setState({
-                            ...this.state, 
-                            real_amount: Number(totalPrice).toFixed(2), 
-                            error: '', 
-                            enableButton:'ui teal labeled icon button', 
-                            quantity: cryptoQuantity
                         });
         }
-        
     }
 
     changeAmountSell(event) {
         const cryptoQuantity = event.target.value;
         const totalPrice = cryptoQuantity * this.state.cryptoFocus.sell;
         
-        if (cryptoQuantity > this.state.userCryptoAmounts[`${this.state.cryptoFocus.name}_value`] ) {
+        if(!this.isNegative(cryptoQuantity)) {
+            if (cryptoQuantity > this.state.userCryptoAmounts[`${this.state.cryptoFocus.name}_value`] ) {
+                this.setState({
+                                ...this.state, 
+                                crypto_amount: Number(totalPrice).toFixed(2), 
+                                error: 'Você não tem dinheiro suficiente para essa venda', 
+                                enableButton:'ui teal labeled icon disabled button', 
+                                quantity:cryptoQuantity 
+                            });
+            } else { 
+                this.setState({
+                                ...this.state, 
+                                crypto_amount: Number(totalPrice).toFixed(2), 
+                                error: '', 
+                                enableButton:'ui teal labeled icon button', 
+                                quantity: cryptoQuantity
+                            });
+            }
+        } else {
             this.setState({
-                            ...this.state, 
-                            crypto_amount: Number(totalPrice).toFixed(2), 
-                            error: 'Você não tem dinheiro suficiente para essa venda', 
-                            enableButton:'ui teal labeled icon disabled button', 
-                            quantity:cryptoQuantity 
-                        });
-        } else { 
-            this.setState({
-                            ...this.state, 
-                            crypto_amount: Number(totalPrice).toFixed(2), 
-                            error: '', 
-                            enableButton:'ui teal labeled icon button', 
-                            quantity: cryptoQuantity
-                        });
+                ...this.state, 
+                real_amount: Number(totalPrice).toFixed(2), 
+                error: 'Valores negativos não são permitidos', 
+                enableButton:'ui teal labeled icon disabled button', 
+                quantity:cryptoQuantity   
+            });
         }
     }
 
