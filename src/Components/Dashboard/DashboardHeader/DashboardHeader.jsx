@@ -17,7 +17,7 @@ export default class DashboardHeader extends Component {
                         <img  alt='stone' src={stoneSvg}>
                         </img>
                     </a>
-                    <a href = '#!' onClick = {() => this.logout()} className="item">
+                    <a href = 'javascript:void(0)' onClick = {() => this.logout()} className="item">
                         <i className="sign-out icon"></i>
                     </a>
                     <a href="#" className="item">
