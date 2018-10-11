@@ -1,9 +1,11 @@
 .login-main {
     background-color: #333;
-    height: 101.5vh;
+    height: 100vh;
 }
 
 .logo{
+    display:block;
+    margin:auto;
     width: 300px;
     height: 300px;
 }

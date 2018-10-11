@@ -29,6 +29,10 @@ a {
     text-align:center
 }
 
+.center {
+    margin: 0px 0px 0px 36.9%;
+    width: 25%;
+}
 
 @media only screen and (max-width: 600px) {
     .login-main {
@@ -41,42 +45,30 @@ a {
     }
 }   
 
-@media only screen and (max-width: 1000px) {
-    .responsive {
-        width: 45% !important;
-    }
-    .login-main {
-        height: 105.5vh;
+@media only screen and (max-width: 1470px) {
+    .center {
+        width: 33% !important;
+        margin: 0px 0px 0px 32%;;
     }
 }
 
-@media only screen and (min-width: 1000px) {
-    .responsive {
-        width: 45% !important;
+@media only screen and (max-width: 1472px) {
+    .center {
+        width: 39% !important;
+        margin: 0px 0px 0px 29%;;
     }
-    .login-main {
-        height: 120vh;
+}
+
+@media only screen and (max-width: 740px) {
+    .center {
+        width: 47% !important;
+        margin: 0px 0px 0px 24%;;
     }
 }
 
 @media only screen and (max-width: 420px) {
-    .login-main {
-        height: 117vh;
-    }
-    .responsive {
-        padding-right: 0rem !important;
+    .center {
         width: 85% !important;
-        padding-left: 0.3rem !important;
-    }
-}   
-
-@media only screen and (min-width: 1400px) {
-    .login-main {
-        height: 105.5vh;
-    }
-    .responsive {
-        padding-right: 3rem !important;
-        width: 27% !important;
-        padding-left: 0.3rem !important;
+        margin: 0px 0px 0px 7%;;
     }
 }

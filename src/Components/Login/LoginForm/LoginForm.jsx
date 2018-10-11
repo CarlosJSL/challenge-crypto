@@ -110,49 +110,61 @@ export default class LoginForm extends Component {
 
     render() {
             return (
-                <div className="ui four column centered grid">
-                    <div className="column responsive">
-                        <form className="ui form" onSubmit={this.handleSubmit}>
-                            <div className= "field" style = {{display:this.state.registerClass}}>
-                                <label>Name</label>
-                                <input type="text" id="name" placeholder="Nome" value={this.state.name} onChange={this.handleChange}></input>
-                            </div>
-                            <div className="field">
-                                <label>Email</label>
-                                <input type="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleChange}></input>
-                            </div>
-                            <div className="field">
-                                <label>Password</label>
-                                <input type="text" id="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} ></input>
-                            </div>
-                                {
-                                    this.state.errors.map((error,index) => {
-                                        return(
-                                            <p className= "error" key={index}>{error}</p>
-                                        )
-                                    })
-                                }
-                            <div style = {{display:this.state.loginClass}}>
-                                <p id="register">Você não está cadastrado ainda?  
-                                    <a href = 'javascript:void(0)' 
-                                        onClick={()=> this.setState({errors:[],showRegisterForm: true, registerClass:'inherit',loginClass:'none', email:'', password:'', name:''})}>  
-                                          Cadastre-se aqui!
-                                    </a>
-                                </p>
-                                <button className="ui positive button" type="submit">Sign in</button>
-                            </div>
-                            <div style = {{display:this.state.registerClass}} >
-                                <p id="register">Você já está cadastrado? 
-                                    <a href = 'javascript:void(0)'
-                                        onClick={()=> this.setState({errors:[],showRegisterForm: false, registerClass:'none', loginClass:'inherit',email:'', password:'', name:''})}>  
-                                         Faça seu login aqui!
-                                    </a>
-                                </p>
-                                <button className="ui positive button" type="submit">Sign up</button>
-                            </div>
-                        </form>
+                <form className="ui form center" onSubmit={this.handleSubmit}>
+                    <div className= "field" style = {{display:this.state.registerClass}}>
+                        <label>Name</label>
+                        <input type="text" id="name" placeholder="Nome" value={this.state.name} onChange={this.handleChange}></input>
                     </div>
-                </div>
+                    <div className="field">
+                        <label>Email</label>
+                        <input type="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleChange}></input>
+                    </div>
+                    <div className="field">
+                        <label>Password</label>
+                        <input type="text" id="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} ></input>
+                    </div>
+                        {
+                            this.state.errors.map((error,index) => {
+                                return(
+                                    <p className= "error" key={index}>{error}</p>
+                                )
+                            })
+                        }
+                    <div style = {{display:this.state.loginClass}}>
+                        <p id="register">Você não está cadastrado ainda?  
+                            <a href = 'javascript:void(0)' 
+                                onClick={()=> this.setState({
+                                                        errors:[],
+                                                        showRegisterForm: true, 
+                                                        registerClass:'inherit',
+                                                        loginClass:'none', 
+                                                        email:'', 
+                                                        password:'', 
+                                                        name:''
+                                                    })}>  
+                                    Cadastre-se aqui!
+                            </a>
+                        </p>
+                        <button className="ui positive button" type="submit">Sign in</button>
+                    </div>
+                    <div style = {{display:this.state.registerClass}} >
+                        <p id="register">Você já está cadastrado?
+                            <a href = 'javascript:void(0)'
+                                onClick={()=> this.setState({
+                                                        errors:[],
+                                                        showRegisterForm: false, 
+                                                        registerClass:'none', 
+                                                        loginClass:'inherit',
+                                                        email:'', 
+                                                        password:'', 
+                                                        name:''
+                                                    })}>  
+                                    Faça seu login aqui!
+                            </a>
+                        </p>
+                        <button className="ui positive button" type="submit">Sign up</button>
+                    </div>
+                </form>
             )
         } 
 }
