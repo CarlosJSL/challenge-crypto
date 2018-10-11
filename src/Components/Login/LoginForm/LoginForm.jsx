@@ -110,7 +110,7 @@ export default class LoginForm extends Component {
 
     render() {
             return (
-                <form className="ui form center" onSubmit={this.handleSubmit}>
+                <form className="ui form center-form" onSubmit={this.handleSubmit}>
                     <div className= "field" style = {{display:this.state.registerClass}}>
                         <label>Name</label>
                         <input type="text" id="name" placeholder="Nome" value={this.state.name} onChange={this.handleChange}></input>
@@ -121,7 +121,7 @@ export default class LoginForm extends Component {
                     </div>
                     <div className="field">
                         <label>Password</label>
-                        <input type="text" id="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} ></input>
+                        <input type="password" id="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} ></input>
                     </div>
                         {
                             this.state.errors.map((error,index) => {

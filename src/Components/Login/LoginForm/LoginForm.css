@@ -29,46 +29,35 @@ a {
     text-align:center
 }
 
-.center {
+.center-form {
     margin: 0px 0px 0px 36.9%;
     width: 25%;
 }
 
-@media only screen and (max-width: 600px) {
-    .login-main {
-        height: 117vh;
-    }
-    .responsive {
-        padding-right: 0rem !important;
-        width: 85% !important;
-        padding-left: 0.3rem !important;
-    }
-}   
-
 @media only screen and (max-width: 1470px) {
-    .center {
+    .center-form {
         width: 33% !important;
-        margin: 0px 0px 0px 32%;;
+        margin: 0px 0px 0px 32%;
     }
 }
 
 @media only screen and (max-width: 1472px) {
-    .center {
+    .center-form {
         width: 39% !important;
-        margin: 0px 0px 0px 29%;;
+        margin: 0px 0px 0px 29%;
     }
 }
 
 @media only screen and (max-width: 740px) {
-    .center {
+    .center-form {
         width: 47% !important;
-        margin: 0px 0px 0px 24%;;
+        margin: 0px 0px 0px 24%;
     }
 }
 
 @media only screen and (max-width: 420px) {
-    .center {
+    .center-form {
         width: 85% !important;
-        margin: 0px 0px 0px 7%;;
+        margin: 0px 0px 0px 7%;
     }
 }
