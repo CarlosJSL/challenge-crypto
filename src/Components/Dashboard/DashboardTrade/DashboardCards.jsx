@@ -47,6 +47,15 @@ export default class DashboardCards extends Component {
     }
     
     changeAmount(event) {
+        if (this.state.cryptoFocus.buy === 'Nao foi possivel obter o valor') {
+            return this.setState({
+                                    ...this.state, 
+                                    real_amount: Number(totalPrice).toFixed(2), 
+                                    error: 'Não foi possivel recuperar o valor da cryptomoeda. Por favor, ente novamente mais tarde', 
+                                    enableButton:'ui teal labeled icon disabled button', 
+                                    quantity:cryptoQuantity   
+                                });
+        }
         const cryptoQuantity = event.target.value;
         const totalPrice = cryptoQuantity * this.state.cryptoFocus.buy;
 
@@ -83,6 +92,16 @@ export default class DashboardCards extends Component {
         const cryptoQuantity = event.target.value;
         const totalPrice = cryptoQuantity * this.state.cryptoFocus.sell;
         
+        if (this.state.cryptoFocus.sell === 'Nao foi possivel obter o valor') {
+            return this.setState({
+                                    ...this.state, 
+                                    crypto_amount: Number(totalPrice).toFixed(2),
+                                    error: 'Não foi possivel recuperar o valor da cryptomoeda. Por favor, ente novamente mais tarde', 
+                                    enableButton:'ui teal labeled icon disabled button', 
+                                    quantity:cryptoQuantity   
+                                });
+        }
+
         if(!this.isNegative(cryptoQuantity)) {
             if (cryptoQuantity > this.state.userCryptoAmounts[`${this.state.cryptoFocus.name}_value`] ) {
                 this.setState({

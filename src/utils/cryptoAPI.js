@@ -20,6 +20,14 @@ export const getBitcoinPrice = async () => {
         }
     } catch (error) {
         console.error(error)
+        return {
+            name: 'bitcoin  ',
+            buy:  'Nao foi possivel obter o valor', 
+            sell: 'Nao foi possivel obter o valor',
+            date: moment(Date()).format('DD/MM/YYYY'),
+            logo: BritaLogo,
+            symbol: "$"
+        }
     }
     
 }
@@ -34,7 +42,6 @@ export const getBritaPrice = async (date) => {
 
     try {
         const result = await axios(britaURL, { params });
-
         if(result.data.value.length === 0){
             const newDate = new Date();
             newDate.setDate(newDate.getDate()-1);
@@ -51,5 +58,13 @@ export const getBritaPrice = async (date) => {
         }
     } catch (error) {
         console.error(error)
+        return {
+            name: 'brita',
+            buy:  'Nao foi possivel obter o valor', 
+            sell: 'Nao foi possivel obter o valor',
+            date: moment(Date()).format('DD/MM/YYYY'),
+            logo: BritaLogo,
+            symbol: "$"
+        }
     }
 }
